@@ -1,15 +1,3 @@
-%strongly recommended
-\numberwithin{theorem}{section}
-\numberwithin{equation}{section}
-
-\theoremstyle{plain} 
-% \theoremheaderfont{\normalfont\itshape}
-% \theorembodyfont{\normalfont} 
-% \theoremseparator{.}
-% \theoremsymbol{\hfill\ensuremath{\square}}
-\newtheorem{remark}[theorem]{Remark}
-
-
 \newcommand{\ie}{i.e.,\@\xspace}
 \newcommand{\eg}{e.g.,\@\xspace}
 \newcommand{\cf}{cf.\@\xspace}
@@ -403,7 +391,6 @@
 %=======================CALIGRAPHIC SYMBOLS====================================
 
 %=======================BLACKBOARD SYMBOLS====================================
-
 \newcommand{\polzero}{\mathbb{0}}
 \newcommand{\polone}{\mathds{1}}
 
@@ -507,3 +494,8 @@
 \newcommand{\bpolY}{\pmb{\mathbb Y}}
 \newcommand{\bpolZ}{\pmb{\mathbb Z}}
 %=======================BLACKBOARD SYMBOLS====================================
+
+%=======================COLUMN TYPES====================================
+\newcolumntype{E}{S[scientific-notation = true, round-mode=places, round-precision = 3, table-format=1.3e-2, output-exponent-marker = \text{E}]}
+\newcolumntype{R}{S[scientific-notation = false, round-mode=places, round-precision = 2, drop-zero-decimal=false, table-format=1.2]}
+%=======================COLUMN TYPES====================================
