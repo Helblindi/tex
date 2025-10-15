@@ -1,0 +1,9 @@
+\newif\ifshowcomments
+\showcommentstrue   % comment this line to hide comments
+% \showcommentsfalse % uncomment this line to hide comments
+
+\ifshowcomments
+  \newcommand\MS[1]{{\color{red}\textbf{[[MS: #1]]}}}
+\else
+  \newcommand\MS[1]{}
+\fi
