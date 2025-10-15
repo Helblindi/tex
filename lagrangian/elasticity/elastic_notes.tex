@@ -1,0 +1,211 @@
+\documentclass{article}
+
+\usepackage{amsmath, amsthm, amssymb, amsfonts}
+\usepackage{graphicx}
+%It is best practice to keep all your pictures in
+%one folder inside the main directory in which your
+%TeX file is kept. Here the folder is named "images."
+%Replace the name here with your folder's name, if needed.
+%The period is needed due to relative referencing.
+\graphicspath{ {./images/} }
+%If you have JPEG format images, add .jpg as an
+%allowed file extension below. Same for Bitmaps (.bmp).
+\DeclareGraphicsExtensions{.png}
+\usepackage{setspace}
+\usepackage{geometry}
+\usepackage{float}
+\usepackage[hidelinks]{hyperref}
+\usepackage[utf8]{inputenc}
+\usepackage[english]{babel}
+\usepackage{framed}
+\usepackage[dvipsnames]{xcolor}
+\usepackage{tcolorbox}
+
+\usepackage{color}
+\usepackage{bbm}
+\usepackage{dsfont}
+\usepackage{xspace}
+
+
+% For natbib-style references, uncomment this.
+\usepackage[numbers]{natbib}
+% \let\cite=\citet
+% Use \citet for textual citations Author [#]
+% Use \cite for normal citations
+% Use \citep for optional pre/post notes
+% Ex: \citep[see][p.~5]{Smith2020} gives (see Smith, [#], p. 5).
+
+\usepackage{array}
+\usepackage{enumerate}
+\usepackage{enumitem}
+\usepackage{ulem}
+% \let\cite=\citet
+\usepackage{adjustbox}
+\usepackage{caption}
+\usepackage{subcaption}
+\usepackage{siunitx}
+\usepackage{algorithm}
+\usepackage{algpseudocode}
+
+% Custom definitions
+\makeatletter
+%EDIT the path to the .sty files as needed
+\def\input@path{{../../}} % Adjust relative to the current file
+\makeatother
+\usepackage{mydef}
+\usepackage{xthm}
+\usepackage{comments}
+
+% -------------- Project specific commands
+\newcommand{\HRule}[1]{\rule{\linewidth}{#1}}
+% --------------
+
+% \setstretch{1.2}
+\geometry{
+    textheight=9in,
+    textwidth=5.5in,
+    top=1in,
+    headheight=12pt,
+    headsep=25pt,
+    footskip=30pt
+}
+
+% ------------------------------------------------------------------------------
+
+\begin{document}
+
+% ------------------------------------------------------------------------------
+% Cover Page and ToC
+% ------------------------------------------------------------------------------
+
+\title{ \normalsize \textsc{}
+		\\ [2.0cm]
+		\HRule{1.5pt} \\
+		\LARGE \textbf{\uppercase{Elastic Notes}
+		\HRule{2.0pt} \\ [0.6cm] 
+      % \LARGE{Subtitle}
+      \vspace*{10\baselineskip}}
+		}
+\date{}
+\author{\textbf{Author} \\ 
+		Madison Sheridan}
+
+\maketitle
+\newpage
+
+\tableofcontents
+\newpage
+
+% ------------------------------------------------------------------------------
+
+\section{Anisotropic Derivation}
+
+\subsection{Notation}
+Recall the deformation gradient
+\begin{equation}
+   \polJ := \frac{\partial \bPhi\left(\bxi, t\right)}{\partial \bxi}
+\end{equation}
+where $\bPhi$ is the mapping from reference to current configuration.
+The right Cauchy-Green deformation tensor is defined as
+\begin{equation}
+   \bC := \polJ\tr\polJ.
+\end{equation}
+The reduced right Cauchy-Green deformation tensor is defined as
+\begin{equation}
+   \obc := \frac{\bC}{\left|\bC\right|^{1/3}}
+\end{equation}
+
+\subsection{Hyperelasticity}
+In order to guarantee the existence of solutions, the strain energy function must be sequentially weakly lower semicontinuous (s.w.l.s.) and must meet a coercivity condition \cite{schroder-neff-ebbing-2008}.
+
+\MS{Define s.w.l.s. and coercivity condition.}
+
+Adopting Ball’s polyconvexity framework \cite{ball-1977} guarantees sequential weak lower semicontinuity and coercivity and, in particular, implies ellipticity. For this reason, we formulate the strain-energy function to be polyconvex.
+
+\begin{definition}[Polyconvexity]
+   A function $W\in C^2\left(\polM^{3\times 3}, \polR\right)$ is polyconvex if there exists a convex function $P:\mathbb{R}^{3\times 3}\times\mathbb{R}^{3\times 3}\times\mathbb{R}\to\mathbb{R}$ such that
+   \begin{equation}
+      W(\polJ) = P(\polJ, \text{Adj}\,\polJ, \det\,\polJ)
+   \end{equation}
+   for all $\polJ\in\mathbb{R}^{3\times 3}$ with $\det\,\polJ > 0$.
+\end{definition}
+
+\subsection{Uniaxial Tension Test}
+
+In \cite[Sec.~4.1]{chaimoon2019} for the Uniaxial tension tests on coronary arteries the authors describe their fiber based stress to account for the anisotropic case.
+They define the strain energy function in Eq.~(39) as
+\begin{multline}
+   \label{eqn:chaimoon-strain}
+   \bsigma = \left(1-2w_1^1\right) \left[\frac{A_1}{2}\left(I_1-3\right) + \frac{B_1}{2}\left(\frac{I_2}{I_3}-3\right)\right] \\
+   + 2w_1^1D_1 \left[\frac{1}{A_1}\left(e^{A_1\left(J_{4i}-1\right)}-1\right) + \frac{1}{B_1}\left(e^{B_1\left(K_{5i}^{\text{inc}}-1\right)} -1\right)\right]
+\end{multline}
+where
+\begin{align*}
+   I_1 &= \Tr\left[\bC\right] & J_{4i} &= \Tr\left[\bC\bG_i\right] \\
+   I_2 &= \frac{1}{2}\left(\Tr\left[\bC\right]^2 - \Tr\left[\bC^2\right]\right) & J_{5i} &= \Tr\left[\bC^2\bG_i\right] \\
+   I_3 &= \det\left[\bC\right] & K_{5i} &= J_{5i} - I_1J_{4i} + I_2\Tr\left[\bG_i\right].
+\end{align*}
+
+\begin{remark}
+   Notice that in \cite{chaimoon2019} they work in the Cauchy-Green Strain tensor $\bC$, not the reduced tensor $\obc$.
+   This will mean slight modifications to our representation.
+\end{remark}
+
+\begin{remark}
+   Notice also that the strain energy function given in \eqref{eqn:chaimoon-strain} is in terms of $K_{5i}$. 
+   This is because the invariant $J_{5i}$ is not convex with respect to $\polJ$, as shown in \cite[Lem.~C.7]{schroder-neff-2003}.
+\end{remark}
+
+\subsection{Reduced Invariant Implementation}
+We adopt the following reduced invariants
+\begin{align*}
+   j_1 &= \Tr\left[\obc\right] & j_{4i} &= \Tr\left[\obc\bG_i\right] \\
+   j_2 &= \Tr\left[\obc^2\right] & j_{5i} &= \Tr\left[\obc^2\bG_i\right] \\
+   j_3 &= \det\left[\obc\right] = 1 & k_{5i} &= j_{5i} - j_1j_{4i} + j_2\Tr\left[\bG_i\right].   
+\end{align*}
+Then we have the following relationships between the invariants:
+\begin{align*}
+   I_1 &= \left|\bC\right|^{1/3} j_1 & J_{4i} &= \left|\bC\right|^{1/3} j_{4i} \\
+   I_2 &= \left|\bC\right|^{2/3}\frac{j_1^2 - j_2}{2} & J_{5i} &= \left|\bC\right|^{2/3} j_{5i} \\
+   & & K_{5i} &= \left|\bC\right|^{2/3}\left(j_{5i} - j_1j_{4i} + \frac{j_1^2 - j_2}{2}\right).
+\end{align*}
+Then the strain energy function \eqref{eqn:chaimoon-strain} becomes 
+\begin{multline}
+\label{eqn:aortic-eos}
+    e^s=\left(1-2 w^1_1 \right)\left[\frac{A_1}{2}\left(\left|\bC\right|^{1/3}j_1-3\right)+\frac{B_1}{2}\left(\frac{1}{2\left|\bC\right|^{1/3}}\left(j_1^2-j_2\right)-3\right)\right]\\
+    +2w^1_1D_1\left[\frac{1}{A_1}\left(\exp\left\{A_1\left(\left|\bC\right|^{1/3}j_{4i}-1\right)\right\}-1\right)+\frac{1}{B_1}\left(\exp\left\{\left(B_1\left(\left|\bC\right|^{2/3} \left(j_{5i}-j_1j_{4}+\frac{j_1^2-j_2}{2}\right)-1\right)\right)\right\}-1\right)\right]
+\end{multline}
+
+\newpage
+
+% ------------------------------------------------------------------------------
+% Reference and Cited Works
+% ------------------------------------------------------------------------------
+%fix spacing in bibliography, if any...
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\let\oldbibitem\bibitem
+\renewcommand{\bibitem}{\setlength{\itemsep}{0pt}\oldbibitem}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%The bibliography style declared is the IEEE format. If
+%you require a different style, see the document
+%bibstyles.pdf included in this package. This file,
+%hosted by the University of Vienna, shows several
+%bibliography styles and examples of in-text citation
+%and a references page.
+% \bibliographystyle{ieeetr}
+\bibliographystyle{plainnat}
+
+% \phantomsection
+% \addcontentsline{toc}{chapter}{REFERENCES}
+
+% \renewcommand{\bibname}{{\normalsize\rm REFERENCES}}
+
+%This file is a .bib database that contains the sources.
+%This removes the dependency on the previous file
+%bibliography.tex.
+%EDIT the path to the .bib file as needed
+\bibliography{../../bibliography}
+
+% ------------------------------------------------------------------------------
+
+\end{document}
