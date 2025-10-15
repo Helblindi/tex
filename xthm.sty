@@ -1,0 +1,32 @@
+%strongly recommended
+% \numberwithin{theorem}{section}
+% \numberwithin{equation}{section}
+
+% \theoremstyle{plain} 
+% \theoremheaderfont{\normalfont\itshape}
+% \theorembodyfont{\normalfont} 
+% \theoremseparator{.}
+% \theoremsymbol{\hfill\ensuremath{\square}}
+% \newtheorem{theorem}{Theorem}
+% \newtheorem{lemma}{Lemma}
+% \newtheorem{corollary}[theorem]{Corollary} % Use theorem counter
+% \newtheorem{definition}{Definition}
+% \newtheorem{remark}[theorem]{Remark}
+%---
+
+\colorlet{LightGray}{White!90!Periwinkle}
+\colorlet{LightOrange}{Orange!15}
+\colorlet{LightGreen}{Green!15}
+
+\usepackage{thmtools}
+\declaretheoremstyle[name=Theorem,]{thmsty}
+\declaretheorem[style=thmsty,numberwithin=section]{theorem}
+\tcolorboxenvironment{theorem}{colback=LightGray}
+
+\declaretheoremstyle[name=Proposition,]{prosty}
+\declaretheorem[style=prosty,numberlike=theorem]{proposition}
+\tcolorboxenvironment{proposition}{colback=LightOrange}
+
+\declaretheoremstyle[name=Principle,]{prcpsty}
+\declaretheorem[style=prcpsty,numberlike=theorem]{principle}
+\tcolorboxenvironment{principle}{colback=LightGreen}
