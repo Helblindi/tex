@@ -1,0 +1,1637 @@
+@article{abgrall-loubere-ovadia-2004,
+author = {Loubère, R. and Ovadia, J. and Abgrall, R.},
+title = {A Lagrangian Discontinuous Galerkin-type method on unstructured meshes to solve hydrodynamics problems},
+journal = {International Journal for Numerical Methods in Fluids},
+volume = {44},
+number = {6},
+pages = {645-663},
+keywords = {Lagrangian method, Discontinuous Galerkin method, remapping, hydrodynamics problem, isentropic compression},
+doi = {https://doi.org/10.1002/fld.665},
+url = {https://onlinelibrary.wiley.com/doi/abs/10.1002/fld.665},
+eprint = {https://onlinelibrary.wiley.com/doi/pdf/10.1002/fld.665},
+abstract = {Abstract This paper concerns a new Lagrangian Discontinuous Galerkin-type method to solve 2D fluid flows on unstructured meshes. By using a basis of Bernstein polynomials of degree m in each triangle, we define a diffusion process which ensures positivity and stability of the scheme. The discontinuities of the physical variables at the interfaces between cells are solved with an acoustic Riemann solver. A remeshing/remapping process is performed with a particle method: the remapping is locally conservative and its accuracy can be adapted to the accuracy of the numerical method. Copyright © 2004 John Wiley \& Sons, Ltd.},
+year = {2004}
+}
+
+@article {Anderson_Dobrev_2018,
+    AUTHOR = {Anderson, Robert W. and Dobrev, Veselin A. and Kolev, Tzanio
+              V. and Rieben, Robert N. and Tomov, Vladimir Z.},
+     TITLE = {High-order multi-material {ALE} hydrodynamics},
+   JOURNAL = {SIAM J. Sci. Comput.},
+  FJOURNAL = {SIAM Journal on Scientific Computing},
+    VOLUME = {40},
+      YEAR = {2018},
+    NUMBER = {1},
+     PAGES = {B32--B58},
+      optISSN = {1064-8275},
+   MRCLASS = {65M60 (76L05 76N15)},
+  MRNUMBER = {3744999},
+MRREVIEWER = {Georgios D. Akrivis},
+       optDOI = {10.1137/17M1116453},
+       optURL = {https://doi.org/10.1137/17M1116453},
+}
+
+@article{barlow-2016,
+author = {Barlow, Andrew J. and Maire, Pierre-Henri and Rider, William J. and Rieben, Robert N. and Shashkov, Mikhail J.},
+title = {Arbitrary Lagrangian-Eulerian methods for modeling high-speed compressible multimaterial flows},
+year = {2016},
+issue_date = {October 2016},
+publisher = {Academic Press Professional, Inc.},
+address = {USA},
+volume = {322},
+number = {C},
+issn = {0021-9991},
+url = {https://doi.org/10.1016/j.jcp.2016.07.001},
+doi = {10.1016/j.jcp.2016.07.001},
+abstract = {This paper reviews recent developments in Arbitrary Lagrangian Eulerian (ALE) methods for modeling high speed compressible multimaterial flows in complex geometry on general polygonal meshes. We only consider the indirect ALE approach which consists of three key stages: a Lagrangian stage, in which the solution and the computational mesh are updated; a rezoning stage, in which the nodes of the computational mesh are moved to improve grid quality; and a remapping stage, in which the Lagrangian solution is transferred to the rezoned mesh.},
+journal = {J. Comput. Phys.},
+month = oct,
+pages = {603–665},
+numpages = {63},
+keywords = {Staggered discretization, Rezone, Remap, Multimaterial cells, Lagrangian hydrodynamics, Interface-aware sub-scale closure models, High-order methods, Cell-centered discretization, Arbitrary-Lagrangian-Eulerian hydrodynamics}
+}
+
+@article{Boscheri_Dumbser_Maire_SISC_2024,
+	author = {Boscheri, Walter and Dumbser, Michael and Maire, Pierre-Henri},
+	doi = {10.1137/23M1580863},
+	eprint = { https://doi.org/10.1137/23M1580863 },
+	journal = {SIAM Journal on Scientific Computing},
+	number = {4},
+	pages = {A2224–A2247},
+	title = {A New Thermodynamically Compatible Finite Volume Scheme for Lagrangian Gas Dynamics},
+	opturl = {https://doi.org/10.1137/23M1580863},
+	volume = {46},
+	year = {2024}
+}
+
+@article{Boscheri_Dumbser_2018,
+title = {A second-order cell-centered Lagrangian ADER-MOOD finite volume scheme on multidimensional unstructured meshes for hydrodynamics},
+journal = {Journal of Computational Physics},
+volume = {358},
+pages = {103-129},
+year = {2018},
+issn = {0021-9991},
+doi = {https://doi.org/10.1016/j.jcp.2017.12.040},
+optURL = {https://www.sciencedirect.com/science/article/pii/S0021999117309348},
+author = {Walter Boscheri and Michael Dumbser and Raphaël Loubère and Pierre-Henri Maire},
+keywords = {Cell-centered Lagrangian finite volume schemes, Eucclhyd, Moving unstructured meshes, A posteriori MOOD limiting, ADER approach},
+abstract = {In this paper we develop a conservative cell-centered Lagrangian finite volume scheme for the solution of the hydrodynamics equations on unstructured multidimensional grids. The method is derived from the Eucclhyd scheme discussed in [47], [43], [45]. It is second-order accurate in space and is combined with the a posteriori Multidimensional Optimal Order Detection (MOOD) limiting strategy to ensure robustness and stability at shock waves. Second-order of accuracy in time is achieved via the ADER (Arbitrary high order schemes using DERivatives) approach. A large set of numerical test cases is proposed to assess the ability of the method to achieve effective second order of accuracy on smooth flows, maintaining an essentially non-oscillatory behavior on discontinuous profiles, general robustness ensuring physical admissibility of the numerical solution, and precision where appropriate.}
+}
+
+@article{boscheri-loubere-maire-2021,
+title = {A 3D cell-centered ADER MOOD Finite Volume method for solving updated Lagrangian hyperelasticity on unstructured grids},
+journal = {Journal of Computational Physics},
+volume = {449},
+pages = {110779},
+year = {2022},
+issn = {0021-9991},
+doi = {https://doi.org/10.1016/j.jcp.2021.110779},
+url = {https://www.sciencedirect.com/science/article/pii/S0021999121006744},
+author = {Walter Boscheri and Raphaël Loubère and Pierre-Henri Maire},
+keywords = {Cell-centered Lagrangian finite volume schemes, Moving unstructured meshes,  MOOD limiting, ADER, Hyperelasticity},
+abstract = {In this paper, we present a conservative cell-centered Lagrangian Finite Volume scheme for solving the hyperelasticity equations on unstructured multidimensional grids. The starting point of the present approach is the cell-centered FV discretization named EUCCLHYD and introduced in the context of Lagrangian hydrodynamics. Here, it is combined with the a posteriori Multidimensional Optimal Order Detection (MOOD) limiting strategy to ensure robustness and stability at shock waves with piecewise linear spatial reconstruction. The ADER (Arbitrary high order schemes using DERivatives) approach is adopted to obtain second-order of accuracy in time. This strategy has been successfully tested in a hydrodynamics context and the present work aims at extending it to the case of hyperelasticity. Here, the hyperelasticity equations are written in the updated Lagrangian framework and the dedicated Lagrangian numerical scheme is derived in terms of nodal solver, Geometrical Conservation Law (GCL) compliance, subcell forces and compatible discretization. The Lagrangian numerical method is implemented in 3D under MPI parallelization framework allowing to handle genuinely large meshes. A relatively large set of numerical test cases is presented to assess the ability of the method to achieve effective second order of accuracy on smooth flows, maintaining an essentially non-oscillatory behavior and general robustness across discontinuities and ensuring at least physical admissibility of the solution where appropriate. Pure elastic neo-Hookean and non-linear materials are considered for our benchmark test problems in 2D and 3D. These test cases feature material bending, impact, compression, non-linear deformation and further bouncing/detaching motions.}
+}
+
+@article{burman_ern_2010,
+author = {Burman, Erik and Ern, Alexandre and Fernández, Miguel},
+year = {2010},
+month = {12},
+pages = {},
+title = {Explicit Runge–Kutta Schemes and Finite Elements with Symmetric Stabilization for First-Order Linear PDE Systems},
+volume = {48},
+journal = {SIAM Journal on Numerical Analysis},
+doi = {10.1137/090757940}
+}
+
+@INPROCEEDINGS{burton-1990,
+       author = {{Burton}, D.~E.},
+        title = "{Conservation of energy, momentum, and angular momentum in Lagrangian staggered-grid hydrodynamics}",
+     keywords = {Angular Momentum, Conservation Laws, Energy Conservation, Equations Of Motion, Hydrodynamics, Computational Fluid Dynamics, Computational Grids, Euler-Lagrange Equation, Kinetic Energy, Lagrange Coordinates, Vorticity, Fluid Mechanics and Heat Transfer},
+    booktitle = {Presented at the 1990 Nuclear Explosives Code Developers' Conference},
+         year = 1990,
+        month = nov,
+        pages = {6-9},
+       adsurl = {https://ui.adsabs.harvard.edu/abs/1990necd.confR...6B},
+      adsnote = {Provided by the SAO/NASA Astrophysics Data System}
+}
+
+
+
+@article{burton_morgan_carney_kenamond_2015,
+title = {Reduction of dissipation in Lagrange cell-centered hydrodynamics (CCH) through corner gradient reconstruction (CGR)},
+journal = {Journal of Computational Physics},
+volume = {299},
+pages = {229-280},
+year = {2015},
+issn = {0021-9991},
+doi = {https://doi.org/10.1016/j.jcp.2015.06.041},
+url = {https://www.sciencedirect.com/science/article/pii/S0021999115004398},
+author = {D.E. Burton and N.R. Morgan and T.C. Carney and M.A. Kenamond},
+keywords = {Lagrangian, Hydrodynamics, Godunov, Cell-centered, Finite-volume, Reconstruction, Higher-order, Dissipation, CCH, Corner gradient reconstruction, CGR},
+abstract = {This work presents an extension of a second order cell-centered hydrodynamics scheme on unstructured polyhedral cells [13] toward higher order. The goal is to reduce dissipation, especially for smooth flows. This is accomplished by multiple piecewise linear reconstructions of conserved quantities within the cell. The reconstruction is based upon gradients that are calculated at the nodes, a procedure that avoids the least-square solution of a large equation set for polynomial coefficients. Conservation and monotonicity are guaranteed by adjusting the gradients within each cell corner. Results are presented for a wide variety of test problems involving smooth and shock-dominated flows, fluids and solids, 2D and 3D configurations, as well as Lagrange, Eulerian, and ALE methods.}
+}
+
+@book{callen,
+      author        = "Callen, Herbert B",
+      title         = "{Thermodynamics and an introduction to thermostatistics;
+                       2nd ed.}",
+      publisher     = "Wiley",
+      address       = "New York, NY",
+      year          = "1985",
+      url           = "https://cds.cern.ch/record/450289",
+}
+
+@article {Caramana_Burton_Shashkov_Whalen_1998,
+    AUTHOR = {Caramana, E. J. and Burton, D. E. and Shashkov, M. J. and
+              Whalen, P. P.},
+     TITLE = {The construction of compatible hydrodynamics algorithms
+              utilizing conservation of total energy},
+   JOURNAL = {J. Comput. Phys.},
+  FJOURNAL = {Journal of Computational Physics},
+    VOLUME = {146},
+      YEAR = {1998},
+    NUMBER = {1},
+     PAGES = {227--262},
+      optISSN = {0021-9991},
+   MRCLASS = {76M25 (76M20)},
+  MRNUMBER = {1650480},
+       optDOI = {10.1006/jcph.1998.6029},
+       optURL = {https://doi.org/10.1006/jcph.1998.6029},
+}
+
+@article{caramana-shashkov-whalen-1998,
+title = {Formulations of Artificial Viscosity for Multi-dimensional Shock Wave Computations},
+journal = {Journal of Computational Physics},
+volume = {144},
+number = {1},
+pages = {70-97},
+year = {1998},
+issn = {0021-9991},
+doi = {https://doi.org/10.1006/jcph.1998.5989},
+url = {https://www.sciencedirect.com/science/article/pii/S0021999198959897},
+author = {E.J. Caramana and M.J. Shashkov and P.P. Whalen},
+abstract = {In this paper we present a new formulation of the artificial viscosity concept. Physical arguments for the origins of this term are given and a set of criteria that any proper functional form of the artificial viscosity should satisfy is enumerated. The first important property is that by definition a viscosity must always be dissipative, transferring kinetic energy into internal energy, and must never act as a false pressure. The artificial viscous force should be Galilean invariant and vary continuously as a function of the criterion used to determine compression and expansion, and remain zero for the latter case. These requirements significantly constrain the functional form that the artificial viscous force can have. In addition, an artificial viscosity should be able to distinguish between shock-wave and adiabatic compression, and not result in spurious entropy production when only the latter is present. It must therefore turn off completely for self-similiar motion, where only a uniform stretching and/or a rigid rotation occurs. An additional important, but more subtle, condition where the artificial viscosity should produce no effect is along the direction tangential to a convergent shock front, since the velocity is only discontinuous in the normal direction. Our principal result is the development of a new formulation of an edge-centered artificial viscosity that is to be used in conjunction with a staggered spatial placement of variables that meets all of these standards, and without the need for problem dependent numerical coefficients that have in the past made the artificial viscosity method appear somewhat arbitrary. Our formulation and numerical results are given with respect to two spatial dimensions but all of our arguments carry over directly to three dimensions. A central feature of our development is the implementation of simple advection limiters in a straightforward manner in more than one dimension to turn off the artificial viscosity for the above mentioned conditions, and to substantially reduce its effect when strong velocity gradients are absent.}
+}
+
+@article{caramana-shashkov-1998,
+title = {Elimination of Artificial Grid Distortion and Hourglass-Type Motions by Means of Lagrangian Subzonal Masses and Pressures},
+journal = {Journal of Computational Physics},
+volume = {142},
+number = {2},
+pages = {521-561},
+year = {1998},
+issn = {0021-9991},
+doi = {https://doi.org/10.1006/jcph.1998.5952},
+url = {https://www.sciencedirect.com/science/article/pii/S0021999198959526},
+author = {E.J. Caramana and M.J. Shashkov},
+abstract = {The bane of Lagrangian hydrodynamics calculations is the premature breakdown of grid topology that results in severe degradation of accuracy and run termination often long before the assumption of a Lagrangian zonal mass has ceased to be valid. At short spatial grid scales this is usually referred to by the terms “hourglass” mode or “keystone” motion associated, in particular, with underconstrained grids such as quadrilaterals and hexahedrons in two and three dimensions, respectively. At longer spatial lengths relative to the grid spacing there is what is referred to ubiquitously as “spurious vorticity,” or the long-thin zone problem. In both cases the result is anomalous grid distortion and tangling that has nothing to do with the actual solution, as would be the case for turbulent flow. In this work we show how such motions can be eliminated by the proper use of subzonal Lagrangian masses, and associated densities and pressures. These subzonal pressures give rise to forces that resist these spurious motions. The pressure is no longer a constant in a zone; it now accurately reflects the density gradients that can occur within a zone due to its differential distortion. Subzonal Lagrangian masses can be choosen in more than one manner to obtain subzonal density and pressure variation. However, these masses arise in a natural way from the intersection of the Lagrangian contours, through which no mass flows, that are associated with both the Lagrangian zonal and nodal masses in a staggered spatial grid hydrodynamics formulation. This is an extension of the usual Lagrangian assumption that is often applied to only the zonal mass. We show that with a proper discretization of the subzonal forces resulting from subzonal pressures, hourglass motion and spurious vorticity can be eliminated for a very large range of problems.}
+}
+
+% CAVEAT
+@techreport{CAVEAT,
+  author       = {Addessio, F L and Baumgardner, J R and Dukowicz, J K and Johnson, N L and Kashiwa, B A and Rauenzahn, R M and Zemach, C},
+  title        = {CAVEAT: A computer code for fluid dynamics problems with large distortion and internal slip},
+  institution  = {Los Alamos National Lab., NM (United States)},
+  annote       = {This report is a description of the two-dimensional version of CAVEAT, a computer code which solves numerically the equations of transient, multimaterial, compressible fluid dynamics. CAVEAT is written to treat a wide variety of problems. It has the ability, for example, to describe material interfaces and the large slip along interfaces, to describe complex geometries without sacrificing vector processing, and to apply tabular equations of state. Its numerical methods were chosen to minimize numerical diffusion, achieve a high degree of vectorization, and facilitate extension to three dimensions. CAVEAT uses an explicit time-marching, conservative finite-volume numerical technique in which all state variables, including velocity, are cell centered; values at vertices and cell faces are derived. The technique is a variation of the Godunov method that uses an approximate Riemann solver and accommodates arbitrary equations of state. Spatial differencing may either be first order or second order with a choice of limiters of the gradient in an attempt to preserve monotonicity. The formulation is spatially two-dimensional with options for Cartesian and curvilinear geometries. Discretization is achieved with a mesh of arbitrary quadrilateral cells whose vertices can move with time. Arbitrary mesh motion is supported by allowing transport of material between cells according to the Arbitrary Lagrangian-Eulerian technique. This report is a second edition of an earlier report on CAVEAT. Because of the maturity and expanded use of CAVEAT, this report includes new sections directed toward first-time users. We have chosen to document in this report only the hydrodynamics part of the much larger version of CAVEAT.},
+  url          = {https://www.osti.gov/biblio/5366795},
+  place        = {United States},
+  year         = {1992},
+  month        = {05}
+}
+
+@article{chaimoon2019,
+title = {An anisotropic hyperelastic model with an application to soft tissues},
+journal = {European Journal of Mechanics - A/Solids},
+volume = {78},
+pages = {103845},
+year = {2019},
+issn = {0997-7538},
+doi = {https://doi.org/10.1016/j.euromechsol.2019.103845},
+url = {https://www.sciencedirect.com/science/article/pii/S0997753818309884},
+author = {Krit Chaimoon and Prinya Chindaprasirt},
+keywords = {Finite strain, Anisotropy, Hyperelasticity, Polyconvexity, Soft tissues},
+abstract = {A better and flexible hyperelastic model is required to describe the anisotropic behavior of highly nonlinear elastic materials, especially in a compressive state. In this paper, a generalized hyperelastic model for anisotropic materials with large nonlinear elastic deformations is formulated and proposed. A strain energy function for the model is proposed and decomposed into an isotropic part and an anisotropic part which allows for a variety of combinations of isotropic and anisotropic functions. The model is formulated based on the framework of the invariant theory as well as polyconvexity and coercivity conditions. The proposed strain energy function includes the invariants important when materials are in a compressive state. In order to show the potential capability of the model, it is applied to predicting the highly nonlinear elastic and anisotropic behavior under incompressibility constraint of soft tissues subjected to different load patterns including compression. The numerical results show a good agreement compared with the experimental and previous numerical results.}
+}
+
+@Article{cheng-shu-2008,
+author = {Juan, Cheng and Shu, Chi-Wang},
+title = {A Third Order Conservative Lagrangian Type Scheme on Curvilinear Meshes for the Compressible Euler Equations},
+journal = {Communications in Computational Physics},
+year = {2008},
+volume = {4},
+number = {5},
+pages = {1008--1024},
+abstract = {<p style="text-align: justify;">Based on the high order essentially non-oscillatory (ENO) Lagrangian type scheme on quadrilateral meshes presented in our earlier work [3], in this paper we develop a third order conservative Lagrangian type scheme on curvilinear meshes for solving the Euler equations of compressible gas dynamics. The main purpose of this work is to demonstrate our claim in [3] that the accuracy degeneracy phenomenon observed for the high order Lagrangian type scheme is due to the error from the quadrilateral mesh with straight-line edges, which restricts the accuracy of the resulting scheme to at most second order. The accuracy test given in this paper shows that the third order Lagrangian type scheme can actually obtain uniformly third order accuracy even on distorted meshes by using curvilinear meshes. Numerical examples are also presented to verify the performance of the third order scheme on curvilinear meshes in terms of resolution for discontinuities and non-oscillatory properties.</p>},
+issn = {1991-7120},
+doi = {https://doi.org/2008-CiCP-7824},
+url = {https://global-sci.com/article/81289/a-third-order-conservative-lagrangian-type-scheme-on-curvilinear-meshes-for-the-compressible-euler-equations}
+}
+
+@article{cheng-shu-2014,
+author = {Cheng, Juan and Shu, Chi-Wang},
+title = {Positivity-preserving Lagrangian scheme for multi-material compressible flow},
+year = {2014},
+issue_date = {January 2014},
+publisher = {Academic Press Professional, Inc.},
+address = {USA},
+volume = {257},
+number = {PA},
+issn = {0021-9991},
+abstract = {Robustness of numerical methods has attracted an increasing interest in the community of computational fluid dynamics. One mathematical aspect of robustness for numerical methods is the positivity-preserving property. At high Mach numbers or for flows near vacuum, solving the conservative Euler equations may generate negative density or internal energy numerically, which may lead to nonlinear instability and crash of the code. This difficulty is particularly profound for high order methods, for multi-material flows and for problems with moving meshes, such as the Lagrangian methods. In this paper, we construct both first order and uniformly high order accurate conservative Lagrangian schemes which preserve positivity of physically positive variables such as density and internal energy in the simulation of compressible multi-material flows with general equations of state (EOS). We first develop a positivity-preserving approximate Riemann solver for the Lagrangian scheme solving compressible Euler equations with both ideal and non-ideal EOS. Then we design a class of high order positivity-preserving and conservative Lagrangian schemes by using the essentially non-oscillatory (ENO) reconstruction, the strong stability preserving (SSP) high order time discretizations and the positivity-preserving scaling limiter which can be proven to maintain conservation and uniformly high order accuracy and is easy to implement. One-dimensional and two-dimensional numerical tests for the positivity-preserving Lagrangian schemes are provided to demonstrate the effectiveness of these methods.},
+journal = {J. Comput. Phys.},
+month = jan,
+pages = {143–168},
+numpages = {26},
+keywords = {Positivity-preserving, Multi-material compressible flow, Lagrangian method, High order accuracy, General equation of state}
+}
+
+@book{Chorin_Marsden_1993,
+ abstract = {Mathematics is playing an ever more important role in the physical and biological sciences, provoking a blurring of boundaries between scientific disciplines and a resurgence of interest in the modern as weil as the clas­ sical techniques of applied mathematics. This renewal of interest, bothin research and teaching, has led to the establishment of the series: Texts in Applied Mathematics (TAM). The development of new courses is a natural consequence of a high Ievel of excitement on the research frontier as newer techniques, such as numerical and symbolic computer systems, dynamical systems, and chaos, mix with and reinforce the traditional methods of applied mathematics. Thus, the purpose of this textbook series is to meet the current and future needs of these advances and encourage the teaching of new courses. TAM will publish textbooks suitable for use in advanced undergraduate and beginning graduate courses, and will complement the Applied Mathematical Seiences (AMS) series, whichwill focus on advanced textbooks and research Ievel monographs. Preface This book is based on a one-term coursein fluid mechanics originally taught in the Department of Mathematics of the U niversity of California, Berkeley, during the spring of 1978. The goal of the course was not to provide an exhaustive account of fluid mechanics, nor to assess the engineering value of various approximation procedures.},
+ author = {Chorin, Alexandre J. and Marsden, Jerrold E.},
+ doi = {10.1007/978-1-4612-0883-9},
+ publisher = {Springer New York},
+ editor = {},
+ keywords = {},
+ pages = {},
+ title = {A Mathematical Introduction to Fluid Mechanics},
+ url = {https://app.dimensions.ai/details/publication/pub.1009952911},
+ year = {1993}
+}
+
+
+@book {Ciarlet_1978,
+    AUTHOR = {Ciarlet, P. G.},
+     TITLE = {The finite element method for elliptic problems},
+    SERIES = {Classics in Applied Mathematics},
+    VOLUME = {40},
+      NOTE = {Reprint of the 1978 original [North-Holland, Amsterdam, The Netherlands]},
+ PUBLISHER = {Society for Industrial and Applied Mathematics (SIAM)},
+   ADDRESS = {Philadelphia, PA},
+      YEAR = {2002},
+     PAGES = {xxviii+530},
+      OPTISBN = {0-89871-514-8},
+       OPTDOI = {10.1137/1.9780898719208},
+       OPTURL = {http://dx.doi.org/10.1137/1.9780898719208},
+}
+
+@article {Clayton_guermond_maier_popov_JCP_2023,
+    AUTHOR = {Clayton, Bennett and Guermond, Jean-Luc and Maier, Matthias
+              and Popov, Bojan and Tovar, Eric J.},
+     TITLE = {Robust second-order approximation of the compressible {E}uler
+              equations with an arbitrary equation of state},
+   JOURNAL = {J. Comput. Phys.},
+  FJOURNAL = {Journal of Computational Physics},
+    VOLUME = {478},
+      YEAR = {2023},
+     PAGES = {Paper No. 111926, 21},
+      optISSN = {0021-9991},
+   MRCLASS = {76N10 (65M60)},
+  MRNUMBER = {4543557},
+       optDOI = {10.1016/j.jcp.2023.111926},
+       optURL = {https://doi.org/10.1016/j.jcp.2023.111926},
+}
+
+@article{clayton_guermond_maier_popov_tovar_2023,
+title = {Robust second-order approximation of the compressible Euler equations with an arbitrary equation of state},
+journal = {Journal of Computational Physics},
+volume = {478},
+pages = {111926},
+year = {2023},
+issn = {0021-9991},
+doi = {https://doi.org/10.1016/j.jcp.2023.111926},
+url = {https://www.sciencedirect.com/science/article/pii/S0021999123000219},
+author = {Clayton, Bennett and 
+          Guermond, Jean-Luc and 
+          Maier, Matthias and 
+          Popov, Bojan and 
+          Tovar, Eric J.},
+keywords = {Euler equations, Gas dynamics, Equation of state, Tabulated equation of state, Invariant-domain preserving, Convex limiting},
+abstract = {This paper is concerned with the approximation of the compressible Euler equations supplemented with an arbitrary or tabulated equation of state. The proposed approximation technique is robust, formally second-order accurate in space, invariant-domain preserving, and works for every equation of state, tabulated or analytic, provided the pressure is nonnegative. An entropy surrogate functional that grows across shocks is proposed. The numerical method is verified with novel analytical solutions and then validated with several computational benchmarks seen in the literature including problems with composite waves.}
+}
+
+@article {clayton_guermond_popov_SISC2021,
+    AUTHOR = {Clayton, Bennett and Guermond, Jean-Luc and Popov, Bojan},
+     TITLE = {Invariant domain-preserving approximations for the {E}uler
+              equations with tabulated equation of state},
+   JOURNAL = {SIAM J. Sci. Comput.},
+  FJOURNAL = {SIAM Journal on Scientific Computing},
+    VOLUME = {44},
+      YEAR = {2022},
+    NUMBER = {1},
+     PAGES = {A444--A470},
+      optISSN = {1064-8275},
+   MRCLASS = {65M60 (35L65 65M12 65M22 76N10)},
+  MRNUMBER = {4381952},
+       optDOI = {10.1137/21M1414097},
+       optURL = {https://doi.org/10.1137/21M1414097},
+}
+
+@phdthesis{clayton_thesis,
+  title        = {A Robust Second Order Invariant-Domain Preserving Approximation of the Compressible Euler Equations With an Arbitrary Equation of State},
+  author       = {Clayton, Bennet},
+  year         = 2023,
+  month        = {May},
+  address      = {College Station, TX},
+  note         = {Available at
+                  \url{https://oaktrust.library.tamu.edu/items/b6839b0f-556b-450d-b48d-c10bcc9e8390}},
+  school       = {Texas A\&M University},
+  type         = {PhD thesis}
+}
+
+%software, but is not style defined
+@misc{Clayton_zenodo_2023,
+  author       = {Clayton, Bennett and Guermond, Jean-Luc and
+                  Popov, Bojan},
+  title        = {{Upper bound on the maximum wave speed for the Riemann problem in Lagrangian hydrodynamics with a tabulated equation of state}},
+  month        = {June},
+  year         = {2023},
+  publisher    = {Zenodo},
+  version      = {1.0},
+  optdoi       = {110.5281/zenodo.8039714},
+  optURL       = {https://doi.org/10.5281/zenodo.8039714}
+}
+
+@article{Cockburn_Lin_Shu_1989,
+title = {TVB Runge-Kutta local projection discontinuous Galerkin finite element method for conservation laws III: One-dimensional systems},
+journal = {Journal of Computational Physics},
+volume = {84},
+number = {1},
+pages = {90-113},
+year = {1989},
+issn = {0021-9991},
+doi = {https://doi.org/10.1016/0021-9991(89)90183-6},
+url = {https://www.sciencedirect.com/science/article/pii/0021999189901836},
+author = {Bernardo Cockburn and San-Yih Lin and Chi-Wang Shu},
+abstract = {This is the third paper in a series in which we construct and analyze a class of TVB (total variation bounded) discontinuous Galerkin finite element methods for solving conservation laws ut+Σi=1d(fi(u)xi=0. In this paper we present the method in a system of equations, stressing the point of how to use the weak form in the component spaces, but to use the local projection limiting in the characteristic fields, and how to implement boundary conditions. A 1-dimensional system is thus chosen as a model. Different implementation techniques are discussed, theories analogous to scalar cases are proven for linear systems, and numerical results are given illustrating the method on nonlinear systems. Discussions of handling complicated geometries via adaptive triangle elements will appear in future papers.}
+}
+
+@article{coggeshall_1991,
+    author = {Coggeshall, S. V.},
+    title = {Analytic solutions of hydrodynamics equations},
+    journal = {Physics of Fluids A: Fluid Dynamics},
+    volume = {3},
+    number = {5},
+    pages = {757-769},
+    year = {1991},
+    month = {05},
+    abstract = {Many similarity solutions have been found for the equations of one‐dimensional (1‐D) hydrodynamics. These special combinations of variables allow the partial differential equations to be reduced to ordinary differential equations, which must then be solved to determine the physical solutions. Usually, these reduced ordinary differential equations are solved numerically. In some cases it is possible to solve these reduced equations analytically to obtain explicit solutions. In this work a collection of analytic solutions of the 1‐D hydrodynamics equations is presented. These can be used for a variety of purposes, including (i) numerical benchmark problems, (ii) as a basis for analytic models, and (iii) to provide insight into more complicated solutions.},
+    issn = {0899-8213},
+    doi = {10.1063/1.858008},
+    url = {https://doi.org/10.1063/1.858008},
+    eprint = {https://pubs.aip.org/aip/pof/article-pdf/3/5/757/12750209/757\_1\_online.pdf},
+}
+
+@article{Crockett03122021,
+    author = {Crockett, Scott D.  and Freibert, Franz J.},
+    title = {Equation of State: Manhattan Project Developments and Beyond},
+    journal = {Nuclear Technology},
+    volume = {207},
+    number = {sup1},
+    pages = {S286--S294},
+    year = {2021},
+    publisher = {Taylor \& Francis},
+    doi = {10.1080/00295450.2021.1913036},
+    URL = { https://doi.org/10.1080/00295450.2021.1913036 },
+    eprint = {https://doi.org/10.1080/00295450.2021.1913036}
+}
+
+& GLACE
+@article {DelPino_Despres_Labourasse_2009,
+    AUTHOR = {Carr\'{e}, G. and Del Pino, S. and Despr\'{e}s, B. and Labourasse, E.},
+     TITLE = {A cell-centered {L}agrangian hydrodynamics scheme on general
+              unstructured meshes in arbitrary dimension},
+   JOURNAL = {J. Comput. Phys.},
+  FJOURNAL = {Journal of Computational Physics},
+    VOLUME = {228},
+      YEAR = {2009},
+    NUMBER = {14},
+     PAGES = {5160--5183},
+      optISSN = {0021-9991},
+   MRCLASS = {76M25 (65M08)},
+  MRNUMBER = {2537850},
+       optDOI = {10.1016/j.jcp.2009.04.015},
+       optURL = {https://doi.org/10.1016/j.jcp.2009.04.015},
+}
+
+@unpublished{DelPino_Despres_Plessier_HAL_2024,
+  TITLE = {{An implicit well-posed Lagrangian scheme for non viscous compressible fluids in high dimension}},
+  AUTHOR = {Del Pino, St{\'e}phane and Despr{\'e}s, Bruno and Plessier, Alexiane},
+  optURL = {https://cea.hal.science/cea-04492829},
+  NOTE = {working paper or preprint},
+  YEAR = {2024},
+  MONTH = Mar,
+  PDF = {https://cea.hal.science/cea-04492829v1/file/implicit-lagrangian.pdf},
+  HAL_ID = {cea-04492829},
+  HAL_VERSION = {v1},
+}
+
+@article{Denner-2021,
+title = {The Gilmore-NASG model to predict single-bubble cavitation in compressible liquids},
+journal = {Ultrasonics Sonochemistry},
+volume = {70},
+pages = {105307},
+year = {2021},
+issn = {1350-4177},
+doi = {https://doi.org/10.1016/j.ultsonch.2020.105307},
+url = {https://www.sciencedirect.com/science/article/pii/S1350417720309779},
+author = {Fabian Denner},
+keywords = {Cavitation, Bubble dynamics, Rayleigh-Plesset models, Real gas},
+abstract = {The Gilmore model is combined with the Noble-Abel-stiffened-gas (NASG) equation of state to yield a simple model to predict the expansion and collapse of spherical bubbles based on real gas thermodynamics. The NASG equation of state resolves the temperature inaccuracy associated with the commonly employed Tait equation of state for liquids and, thus, can provide a consistent description of compressible and thermal effects of the bubble content and the surrounding liquid during cavitation. After a detailed derivation of the proposed Gilmore-NASG model, the differences between the classical Gilmore-Tait model and the proposed model are highlighted with results of single-bubble cavitation related to bubble collapse and driven by an acoustic excitation in frequency and amplitude regimes relevant to sonoluminescence, high-intensity focused ultrasound and shock wave lithotripsy. Especially for rapidly and violently collapsing bubbles, substantial differences in the bubble behaviour can be observed between the proposed Gilmore-NASG model and the classical Gilmore-Tait model. The ability of the Gilmore-NASG model to simultaneously predict reliable pressure and temperature values in gas, vapour and liquid, makes the proposed model particularly attractive for sonochemistry and biomedical applications.}
+}
+
+@book {Despres_book_2016,
+    AUTHOR = {Despr\'{e}s, Bruno},
+     TITLE = {Numerical methods for {E}ulerian and {L}agrangian conservation
+              laws},
+    SERIES = {Frontiers in Mathematics},
+ PUBLISHER = {Birkh\"{a}user/Springer, Cham},
+      YEAR = {2017},
+     PAGES = {xvii+349},
+      optISBN = {978-3-319-50354-7; 978-3-319-50355-4},
+   MRCLASS = {65-02 (35L65 35L67 65Mxx)},
+  MRNUMBER = {3676082},
+MRREVIEWER = {Tore Fl\aa tten},
+       optDOI = {10.1007/978-3-319-50355-4},
+       optURL = {https://doi.org/10.1007/978-3-319-50355-4},
+}
+
+@article{despres-labourasse-2012,
+title = {Stabilization of cell-centered compressible Lagrangian methods using subzonal entropy},
+journal = {Journal of Computational Physics},
+volume = {231},
+number = {20},
+pages = {6559-6595},
+year = {2012},
+issn = {0021-9991},
+doi = {https://doi.org/10.1016/j.jcp.2012.04.018},
+url = {https://www.sciencedirect.com/science/article/pii/S0021999112001994},
+author = {Bruno Després and Emmanuel Labourasse},
+keywords = {Lagrangian hydrodynamics, Energy conserving, High speed flow, Cell-centered scheme, Godunov-type method, Compressible flow, Stabilization},
+abstract = {This work deals with the stabilization of early stages of Lagrangian calculations of compressible gas dynamics in the context of cell-centered discretization. We describe a totally conservative algorithm based on an entropy analysis of the distortion of a Lagrangian mesh. It prevents the tangling of the mesh, while remaining consistent and conservative in mass, momentum, and total energy. The method described can be applied to any cell-centered Lagrangian scheme. In this article, we detail the extension to the cell-centered Glace scheme published in Carré et al. (2009) [G. Carré, S. Del Pino, B. Després, E. Labourasse, A cell-centered Lagrangian hydrodynamics scheme on general unstructured meshes in arbitrary dimension, J. Comput. Phys. 228 (2009) 5160–5183]. Numerical tests are proposed to assess the accuracy and robustness.}
+}
+
+@ARTICLE{despres-mazeran-2005,
+       author = {{Despr{\'e}s}, Bruno and {Mazeran}, Constant},
+        title = "{Lagrangian Gas Dynamics in Two Dimensions and Lagrangian systems}",
+      journal = {Archive for Rational Mechanics and Analysis},
+     keywords = {Neural Network, Numerical Scheme, Electromagnetism, Abstract Formalism, Hyperbolic System},
+         year = 2005,
+        month = dec,
+       volume = {178},
+       number = {3},
+        pages = {327-372},
+          doi = {10.1007/s00205-005-0375-4},
+       adsurl = {https://ui.adsabs.harvard.edu/abs/2005ArRMA.178..327D},
+      adsnote = {Provided by the SAO/NASA Astrophysics Data System}
+}
+
+@misc{despres-moving-grids,
+  TITLE = {{Moving grids and cell volume calculations}},
+  AUTHOR = {Pino, St{\'e}phane Del and Despr{\'e}s, Bruno and Plessier, Alexiane},
+  URL = {https://cea.hal.science/cea-04489104},
+  NOTE = {This is technical paper that provides formula for cell volume calculation in 2D and 3D.},
+  YEAR = {2024},
+  MONTH = Mar,
+  PDF = {https://cea.hal.science/cea-04489104/file/moving_grids.pdf},
+  HAL_ID = {cea-04489104},
+  HAL_VERSION = {v1},
+}
+
+% LAGHOS
+@article {Dobrev_Kolev_Rieben_2012,
+    AUTHOR = {Dobrev, Veselin A. and Kolev, Tzanio V. and Rieben, Robert N.},
+     TITLE = {High-order curvilinear finite element methods for {L}agrangian
+              hydrodynamics},
+   JOURNAL = {SIAM J. Sci. Comput.},
+  FJOURNAL = {SIAM Journal on Scientific Computing},
+    VOLUME = {34},
+      YEAR = {2012},
+    NUMBER = {5},
+     PAGES = {B606--B641},
+      optISSN = {1064-8275},
+   MRCLASS = {65M60 (76L05 76N15)},
+  MRNUMBER = {3023731},
+MRREVIEWER = {John A. Loustau},
+       optDOI = {10.1137/120864672},
+       optURL = {https://doi.org/10.1137/120864672},
+}
+
+@article{dukowicz_meltz_1992,
+  title={Vorticity errors in multidimensional Lagrangian codes},
+  author={Dukowicz, John K and 
+          Meltz, Bertrand JA},
+  journal={Journal of Computational Physics},
+  volume={99},
+  number={1},
+  pages={115--134},
+  year={1992},
+  publisher={Elsevier}
+}
+
+@InProceedings{dukowicz,
+author="Dukowicz, John K.
+and Meltz, Bertrand J. A.",
+editor="Trease, Harold E.
+and Fritts, Martin F.
+and Crowley, W. Patrick",
+title="Vorticity errors in multidimensional Lagrangian codes",
+booktitle="Advances in the Free-Lagrange Method Including Contributions on Adaptive Gridding and the Smooth Particle Hydrodynamics Method",
+year="1991",
+publisher="Springer Berlin Heidelberg",
+address="Berlin, Heidelberg",
+pages="289--292",
+isbn="978-3-540-46608-6"
+}
+
+@article{Dukowicz_1992,
+title = {Vorticity errors in multidimensional lagrangian codes},
+journal = {Journal of Computational Physics},
+volume = {99},
+number = {1},
+pages = {115-134},
+year = {1992},
+issn = {0021-9991},
+doi = {https://doi.org/10.1016/0021-9991(92)90280-C},
+url = {https://www.sciencedirect.com/science/article/pii/002199919290280C},
+author = {John K. Dukowicz and Bertrand J.A. Meltz},
+abstract = {We investigate the apparent paradox, as exemplified by the well-known Saltzman test problem, of multidimensional lagrangian codes experiencing mesh tangling when computing one-dimensional irrotational flows. We demonstrate that the cause is the generation of spurious vorticity, or vorticity error, by a nonuniform mesh. Based on this, we investigate two methods of constructing improved lagrangian vertex velocities by removing, or filtering out, this spurious vorticity, rather than by the more common practice of introducing artificial viscosity. The first method reconstructs the velocity from the known flow divergence and from the true vorticity computed by means of a transport equation. The second method, which is much simpler and more efficient, subtracts a divergence-free correction from the velocity, such that the resulting velocity possesses the correct vorticity. We then successfully apply this method to solve a two-dimensional shock refraction problem, a problem which exhibits nonzero intrinsic vorticity.}
+}
+
+@article{Dumbser_Toro_2011, 
+title={On Universal Osher-Type Schemes for General Nonlinear Hyperbolic Conservation Laws}, 
+volume={10}, 
+DOI={10.4208/cicp.170610.021210a}, 
+number={3}, 
+journal={Communications in Computational Physics}, 
+author={Dumbser, Michael and Toro, Eleuterio F.}, 
+year={2011}, 
+pages={635–671}
+}
+
+@article{dyn-1990,
+author = {Dyn, Nira and Levine, David and Gregory, John A.},
+title = {A butterfly subdivision scheme for surface interpolation with tension control},
+year = {1990},
+issue_date = {April 1990},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+volume = {9},
+number = {2},
+issn = {0730-0301},
+url = {https://doi.org/10.1145/78956.78958},
+doi = {10.1145/78956.78958},
+abstract = {A new interpolatory subdivision scheme for surface design is presented. The new scheme is designed for a general triangulation of control points and has a tension parameter that provides design flexibility. The resulting limit surface is C1 for a specified range of the tension parameter, with a few exceptions. Application of the butterfly scheme and the role of the tension parameter are demonstrated by several examples.},
+journal = {ACM Trans. Graph.},
+month = apr,
+pages = {160–169},
+numpages = {10}
+}
+
+@article{ern_guermond_idp_erk_2022,
+author = {Ern, Alexandre and Guermond, Jean-Luc},
+title = {Invariant-Domain-Preserving High-Order Time Stepping: I. Explicit Runge--Kutta Schemes},
+journal = {SIAM Journal on Scientific Computing},
+volume = {44},
+number = {5},
+pages = {A3366-A3392},
+year = {2022},
+doi = {10.1137/21M145793X},
+URL = { https://doi.org/10.1137/21M145793X},
+eprint = { https://doi.org/10.1137/21M145793X},
+abstract = { We introduce a technique that makes every explicit Runge--Kutta (ERK) time stepping method invariant domain preserving and mass conservative when applied to high-order discretizations of the Cauchy problem associated with systems of nonlinear conservation equations. The key idea is that at each stage of the ERK scheme one computes a low-order update, a high-order update, both defined from the same intermediate stage, and then one applies the nonlinear, mass conservative limiting operator. The main advantage over the strong stability preserving (SSP) paradigm is more flexibility in the choice of the ERK scheme, thus allowing for less stringent restrictions on the time step. The technique is agnostic to the space discretization. It can be combined with continuous finite elements, discontinuous finite elements, and finite volume discretizations in space. Numerical experiments are presented to illustrate the theory. }
+}
+
+@article{favrie_gavrilyuk_saurel_2009,
+title = {Solid–fluid diffuse interface model in cases of extreme deformations},
+journal = {Journal of Computational Physics},
+volume = {228},
+number = {16},
+pages = {6037-6077},
+year = {2009},
+issn = {0021-9991},
+doi = {https://doi.org/10.1016/j.jcp.2009.05.015},
+url = {https://www.sciencedirect.com/science/article/pii/S0021999109002654},
+author = {N. Favrie and S.L. Gavrilyuk and R. Saurel},
+keywords = {Diffuse solid–fluid interfaces, Shocks, Hyperelasticity, Riemann problem, Godunov type methods},
+abstract = {Diffuse interface methods have been recently proposed and successfully used for accurate compressible multi-fluid computations Abgrall [1]; Kapila et al. [20]; Saurel et al. [30]. These methods deal with extended systems of hyperbolic equations involving a non-conservative volume fraction equation and relaxation terms. Following the same theoretical frame, we derive here an Eulerian diffuse interface model for elastic solid-compressible fluid interactions in situations involving extreme deformations. Elastic effects are included following the Eulerian conservative formulation proposed in Godunov [16], Miller and Colella [23], Godunov and Romenskii [17], Plohr and Plohr [27] and Gavrilyuk et al. [14]. We apply first the Hamilton principle of stationary action to derive the conservative part of the model. The relaxation terms are then added which are compatible with the entropy inequality. In the limit of vanishing volume fractions the Euler equations of compressible fluids and a conservative hyperelastic model are recovered. It is solved by a unique hyperbolic solver valid at each mesh point (pure fluid, pure solid and mixture cell). Capabilities of the model and methods are illustrated on various tests of impacts of solids moving in an ambient compressible fluid.}
+}
+
+@article{favrie-2014,
+title = {A thermodynamically compatible splitting procedure in hyperelasticity},
+journal = {Journal of Computational Physics},
+volume = {270},
+pages = {300-324},
+year = {2014},
+issn = {0021-9991},
+doi = {https://doi.org/10.1016/j.jcp.2014.03.051},
+url = {https://www.sciencedirect.com/science/article/pii/S0021999114002381},
+author = {N. Favrie and S. Gavrilyuk and S. Ndanou},
+keywords = {Hyperelasticity, Hyperbolicity, Godunov type methods, Numerical splitting},
+abstract = {A material is hyperelastic if the stress tensor is obtained by variation of the stored energy function. The corresponding 3D mathematical model of hyperelasticity written in the Eulerian coordinates represents a system of 14 conservative partial differential equations submitted to stationary differential constraints. A classical approach for numerical solving of such a 3D system is a geometrical splitting: the 3D system is split into three 1D systems along each spatial direction and solved then by using a Godunov type scheme. Each 1D system has 7 independent eigenfields corresponding to contact discontinuity, longitudinal waves and shear waves. The construction of the corresponding Riemann solvers is not an easy task even in the case of isotropic solids. Indeed, for a given specific energy it is extremely difficult, if not impossible, to check its rank-one convexity which is a necessary and sufficient condition for hyperbolicity of the governing equations. In this paper, we consider a particular case where the specific energy is a sum of two terms. The first term is the hydrodynamic energy depending only on the density and the entropy, and the second term is the shear energy which is unaffected by the volume change. In this case a very simple criterion of hyperbolicity can be formulated. We propose then a new splitting procedure which allows us to find a numerical solution of each 1D system by solving successively three 1D sub-systems. Each sub-system is hyperbolic, if the full system is hyperbolic. Moreover, each sub-system has only three waves instead of seven, and the velocities of these waves are given in explicit form. The last property allows us to construct reliable Riemann solvers. Numerical 1D tests confirm the advantage of the new approach. A multi-dimensional extension of the splitting procedure is also proposed.}
+}
+
+@article{favrie-2015,
+title = {Multi-solid and multi-fluid diffuse interface model: Applications to dynamic fracture and fragmentation},
+journal = {Journal of Computational Physics},
+volume = {295},
+pages = {523-555},
+year = {2015},
+issn = {0021-9991},
+doi = {https://doi.org/10.1016/j.jcp.2015.04.024},
+url = {https://www.sciencedirect.com/science/article/pii/S0021999115002806},
+author = {S. Ndanou and N. Favrie and S. Gavrilyuk},
+keywords = {Fluid–solid interaction, Hyperbolicity, Godunov type methods, Hyperelasticity, Visco-plasticity},
+abstract = {We extend the model of diffuse solid–fluid interfaces developed earlier by authors of this paper to the case of arbitrary number of interacting hyperelastic solids. Plastic transformations of solids are taken into account through a Maxwell type model. The specific energy of each solid is given in separable form: it is the sum of a hydrodynamic part of the energy depending only on the density and the entropy, and an elastic part of the energy which is unaffected by the volume change. It allows us to naturally pass to the fluid description in the limit of vanishing shear modulus. In spite of a large number of governing equations, the model has a quite simple mathematical structure: it is a duplication of a single visco-elastic model. The model is well posed both mathematically and thermodynamically: it is hyperbolic and compatible with the second law of thermodynamics. The resulting model can be applied in the situations involving an arbitrary number of fluids and solids. In particular, we show the ability of the model to describe spallation and penetration phenomena occurring during high velocity impacts.}
+}
+
+@article{favrie-2017,
+title = {Modeling hyperelasticity in non-equilibrium multiphase flows},
+journal = {Journal of Computational Physics},
+volume = {330},
+pages = {65-91},
+year = {2017},
+issn = {0021-9991},
+doi = {https://doi.org/10.1016/j.jcp.2016.11.001},
+url = {https://www.sciencedirect.com/science/article/pii/S0021999116305800},
+author = {Sarah Hank and Nicolas Favrie and Jacques Massoni},
+keywords = {Hyperelasticity, Multiphase Flows, Fluid Structure Interaction, High Velocity Impact, Discrete Equation Method, Godunov type method},
+abstract = {The aim of this article is the construction of a multiphase hyperelastic model. The Eulerian formulation of the hyperelasticity represents a system of 14 conservative partial differential equations submitted to stationary differential constraints. This model is constructed with an elegant approach where the specific energy is given in separable form. The system admits 14 eigenvalues with 7 characteristic eigenfields. The associated Riemann problem is not easy to solve because of the presence of 7 waves. The shear waves are very diffusive when dealing with the full system. In this paper, we use a splitting approach to solve the whole system using 3 sub-systems. This method reduces the diffusion of the shear waves while allowing to use a classical approximate Riemann solver. The multiphase model is obtained by adapting the discrete equations method. This approach involves an additional equation governing the evolution of a phase function relative to the presence of a phase in a cell. The system is integrated over a multiphase volume control. Finally, each phase admits its own equations system composed of three sub-systems. One and three dimensional test cases are presented.}
+}
+
+@article{fedkiw-1999,
+title = {A Non-oscillatory Eulerian Approach to Interfaces in Multimaterial Flows (the Ghost Fluid Method)},
+journal = {Journal of Computational Physics},
+volume = {152},
+number = {2},
+pages = {457-492},
+year = {1999},
+issn = {0021-9991},
+doi = {https://doi.org/10.1006/jcph.1999.6236},
+url = {https://www.sciencedirect.com/science/article/pii/S0021999199962368},
+author = {Ronald P Fedkiw and Tariq Aslam and Barry Merriman and Stanley Osher},
+abstract = {While Eulerian schemes work well for most gas flows, they have been shown to admit nonphysical oscillations near some material interfaces. In contrast, Lagrangian schemes work well at multimaterial interfaces, but suffer from their own difficulties in problems with large deformations and vorticity characteristic of most gas flows. We believe that the most robust schemes will combine the best properties of Eulerian and Lagrangian schemes. In this paper, we propose a new numerical method for treating interfaces in Eulerian schemes that maintains a Heaviside profile of the density with no numerical smearing along the lines of earlier work and most Lagrangian schemes. We use a level set function to track the motion of a multimaterial interface in an Eulerian framework. In addition, the use of ghost cells (actually ghost nodes in our finite difference framework) and a new isobaric fix technique allows us to keep the density profile from smearing out, while still keeping the scheme robust and easy to program with simple extensions to multidimensions and multilevel time integration, e.g., Runge–Kutta methods. In contrast, previous methods used ill-advised dimensional splitting for multidimensional problems and suffered from great complexity when used in conjunction with multilevel time integrators.}
+}
+
+@article{fedkiw-osher-2001,
+title = {Level Set Methods: An Overview and Some Recent Results},
+journal = {Journal of Computational Physics},
+volume = {169},
+number = {2},
+pages = {463-502},
+year = {2001},
+issn = {0021-9991},
+doi = {https://doi.org/10.1006/jcph.2000.6636},
+url = {https://www.sciencedirect.com/science/article/pii/S0021999100966361},
+author = {Stanley Osher and Ronald P. Fedkiw},
+abstract = {The level set method was devised by S. Osher and J. A. Sethian (1988, J. Comput. Phys.79, 12–49) as a simple and versatile method for computing and analyzing the motion of an interface Γ in two or three dimensions. Γ bounds a (possibly multiply connected) region Ω. The goal is to compute and analyze the subsequent motion of Γ under a velocity field v. This velocity can depend on position, time, the geometry of the interface, and the external physics. The interface is captured for later time as the zero level set of a smooth (at least Lipschitz continuous) function ϕ (x, t); i.e., Γ(t)={x|ϕ(x, t)=0}. ϕ is positive inside Ω, negative outside Ω, and is zero on Γ(t). Topological merging and breaking are well defined and easily performed. In this review article we discuss recent variants and extensions, including the motion of curves in three dimensions, the dynamic surface extension method, fast methods for steady state problems, diffusion generated motion, and the variational level set approach. We also give a user's guide to the level set dictionary and technology and couple the method to a wide variety of problems involving external physics, such as compressible and incompressible (possibly reacting) flow, Stefan problems, kinetic crystal growth, epitaxial growth of thin films, vortex-dominated flows, and extensions to multiphase motion. We conclude with a discussion of applications to computer vision and image processing.}
+}
+
+@article{feng-cheng-shu-2025,
+title = {Second order conservative Lagrangian DG schemes for compressible flow and their application in preserving spherical symmetry in two-dimensional cylindrical geometry},
+journal = {Journal of Computational Physics},
+volume = {521},
+pages = {113530},
+year = {2025},
+issn = {0021-9991},
+doi = {https://doi.org/10.1016/j.jcp.2024.113530},
+url = {https://www.sciencedirect.com/science/article/pii/S0021999124007782},
+author = {Wenjing Feng and Juan Cheng and Chi-Wang Shu},
+keywords = {Lagrangian DG scheme, Second-order accuracy, Conservation, Spherical symmetry preservation, Compressible Euler equations},
+abstract = {In this paper, we construct a class of second-order cell-centered Lagrangian discontinuous Galerkin (DG) schemes for the two-dimensional compressible Euler equations on quadrilateral meshes. This Lagrangian DG scheme is based on the physical coordinates rather than the fixed reference coordinates, hence it does not require studying the evolution of the Jacobian matrix for the flow mapping between the different coordinates. The conserved variables are solved directly, and the scheme can preserve the conservation property for mass, momentum and total energy. The strong stability preserving (SSP) Runge-Kutta (RK) method is used for the time discretization. Furthermore, there are two main contributions. Firstly, differently from the previous work, we design a new Lagrangian DG scheme which is truly second-order accurate for all the variables such as density, momentum, total energy, pressure and velocity, while the similar DG schemes in the literature may lose second-order accuracy for certain variables, as shown in numerical experiments. Secondly, as an extension and application, we develop a particular Lagrangian DG scheme in the cylindrical geometry, which is designed to be able to preserve one-dimensional spherical symmetry for all the linear polynomials in two-dimensional cylindrical coordinates when computed on an equal-angle-zoned initial grid. The distinguished feature is that it can maintain both the spherical symmetry and conservation properties, which is very important for many applications such as implosion problems. A series of numerical experiments in the two-dimensional Cartesian and cylindrical coordinates are given to demonstrate the good performance of the Lagrangian DG schemes in terms of accuracy, symmetry and non-oscillation.}
+}
+
+
+@ARTICLE{FIVER-2012,
+       author = {{Farhat}, Charbel and {Gerbeau}, Jean-Fr{\'e}d{\'e}ric and {Rallu}, Arthur},
+        title = "{FIVER: A finite volume method based on exact two-phase Riemann problems and sparse grids for multi-material flows with large density jumps}",
+      journal = {Journal of Computational Physics},
+         year = 2012,
+        month = aug,
+       volume = {231},
+       number = {19},
+        pages = {6360-6379},
+          doi = {10.1016/j.jcp.2012.05.026},
+       adsurl = {https://ui.adsabs.harvard.edu/abs/2012JCoPh.231.6360F},
+      adsnote = {Provided by the SAO/NASA Astrophysics Data System}
+}
+
+@article{godunov-1959,
+  TITLE = {{Finite difference method for numerical computation of discontinuous solutions of the equations of fluid dynamics}},
+  AUTHOR = {Godunov, Sergei K. and Bohachevsky, I.},
+  URL = {https://hal.science/hal-01620642},
+  JOURNAL = {{Matemati{\v c}eskij sbornik}},
+  PUBLISHER = {{Steklov Mathematical Institute of Russian Academy of Sciences}},
+  VOLUME = {47(89)},
+  NUMBER = {3},
+  PAGES = {271-306},
+  YEAR = {1959},
+  PDF = {https://hal.science/hal-01620642v1/file/SG1959.pdf},
+  HAL_ID = {hal-01620642},
+  HAL_VERSION = {v1},
+}
+
+@book{godunov-romenski-continuum-mechanics,
+author = {Godunov, Sergei and Romenski, Evgeniy},
+year = {2003},
+month = {01},
+pages = {},
+title = {Elements of Continuum Mechanics and Conservation Laws},
+publisher = {Springer},
+isbn = {978-1-4419-3399-7},
+doi = {10.1007/978-1-4757-5117-8}
+}
+
+@article{gouin-debieve-1986,
+title = {Variational principle involving the stress tensor in elastodynamics},
+journal = {International Journal of Engineering Science},
+volume = {24},
+number = {7},
+pages = {1057-1066},
+year = {1986},
+issn = {0020-7225},
+doi = {https://doi.org/10.1016/0020-7225(86)90001-7},
+url = {https://www.sciencedirect.com/science/article/pii/0020722586900017},
+author = {Henri Gouin and Jean-François Debieve},
+abstract = {In the mechanics of inviscid conservative fluids, it is classical to generate the equations of dynamic by formulating with adequate variables, that the pressure integral calculated in the time-space domain corresponding to the motion of the continuous medium is stationary. The present study extends this principle to the dynamics of large deformations for isentropic motions in thermo-elastic bodies: We use a new way of writing the equations of motion in terms of “potentials” and we substitute the trace of the stress tensor for the pressure term.}
+}
+
+@book{guermond_ern_vol1,
+  author = {Jean-Luc Guermond \& Alexandre Ern},
+  year = {2020},
+  title = {Finite Elements I: Approximation and Interpolation},
+  publisher = {Springer}
+}
+
+@book{guermond_ern_vol3,
+author = {Ern, Alexandre and Guermond, Jean-Luc},
+address = {Cham, Switzerland},
+booktitle = {Finite elements III : first-order and time-dependent PDEs},
+isbn = {3-030-57348-6},
+keywords = {Calculus ; Functional analysis ; Functions ; Harmonic analysis ; Mathematical analysis},
+language = {eng},
+publisher = {Springer},
+series = {Texts in Applied Mathematics ; Volume 74},
+title = {Finite elements III : first-order and time-dependent PDEs },
+year = {2021},
+}
+
+%software, but is not style defined
+@misc{guermond_jean_luc_2021_4685868,
+  author       = {Clayton, Bennett and Guermond, Jean-Luc and
+                  Popov, Bojan},
+  title        = {{Upper bound on the maximum wave speed in Riemann 
+                   problems for the Euler  equations with tabulated
+                   equation of state}},
+  month        = {apr},
+  year         = {2021},
+  optnote         = {{This code is described in the paper "Invariant 
+                   domain preserving approximations for the Euler
+                   equations with tabulated equation of state"}},
+  publisher    = {Zenodo},
+  version      = {1.0},
+  optdoi          = {10.5281/zenodo.4685868},
+  optURL          = {https://doi.org/10.5281/zenodo.4685868}
+}
+
+@article{guermond_popov_tomas_CMAME_2018,
+title = {Invariant domain preserving discretization-independent schemes and convex limiting for hyperbolic systems},
+journal = {Computer Methods in Applied Mechanics and Engineering},
+volume = {347},
+pages = {143-175},
+year = {2019},
+issn = {0045-7825},
+doi = {https://doi.org/10.1016/j.cma.2018.11.036},
+url = {https://www.sciencedirect.com/science/article/pii/S0045782518305954},
+author = {Jean-Luc Guermond and Bojan Popov and Ignacio Tomas},
+keywords = {Hyperbolic systems, Second-order accuracy, Convex invariant sets, Limiting, Graph viscosity, Finite volumes, Finite elements},
+abstract = {We introduce an approximation technique for nonlinear hyperbolic systems with sources that is invariant domain preserving. The method is discretization-independent provided elementary symmetry and skew-symmetry properties are satisfied by the scheme. The method is formally first-order accurate in space. Then, we introduce a series of higher-order methods. When these methods violate the invariant domain properties, they are corrected by a limiting technique that we call convex limiting. After limiting, the resulting methods satisfy all the invariant domain properties that are imposed by the user (see Theorem 7.24) and is formally high-order accurate. The two key novelties are that (i) limiting is done by enforcing bounds on quasiconcave functionals; (ii) the bounds that are enforced on the solution at each time step are necessarily satisfied by the low-order approximation.}
+}
+
+@article{guermond_nazarov_popov_tomas_2018,
+author = {Guermond, Jean-Luc and 
+          Nazarov, Murtazo and 
+          Popov, Bojan and 
+          Tomas, Ignacio},
+title = {Second-Order Invariant Domain Preserving Approximation of the Euler Equations Using Convex Limiting},
+journal = {SIAM Journal on Scientific Computing},
+volume = {40},
+number = {5},
+pages = {A3211-A3239},
+year = {2018},
+doi = {10.1137/17M1149961},
+URL = {https://doi.org/10.1137/17M1149961},
+eprint = {https://doi.org/10.1137/17M1149961},
+    abstract = { A new second-order method for approximating the compressible Euler equations is introduced. The method preserves all the known invariant domains of the Euler system: positivity of the density, positivity of the internal energy, and the local minimum principle on the specific entropy. The technique combines a first-order, invariant domain preserving, guaranteed maximum speed method using a graph viscosity (GMS-GV1) with an invariant domain violating, but entropy consistent, high-order method. Invariant domain preserving auxiliary states, naturally produced by the GMS-GV1 method, are used to define local bounds for the high-order method, which is then made invariant domain preserving via a convex limiting process. Numerical tests confirm the second-order accuracy of the new GMS-GV2 method in the maximum norm, where the 2 stands for second-order. The proposed convex limiting is generic and can be applied to other approximation techniques and other hyperbolic systems. }
+}
+
+@article{Guermond_Popov_Saavedra_Sheridan_2025,
+title = {Invariant-domain preserving and locally mass conservative approximation of the Lagrangian hydrodynamics equations},
+journal = {Computer Methods in Applied Mechanics and Engineering},
+volume = {441},
+pages = {117927},
+year = {2025},
+issn = {0045-7825},
+doi = {https://doi.org/10.1016/j.cma.2025.117927},
+url = {https://www.sciencedirect.com/science/article/pii/S0045782525001999},
+author = {Jean-Luc Guermond and Bojan Popov and Laura Saavedra and Madison Sheridan},
+keywords = {Lagrangian hydrodynamics, Conservation equations, Hyperbolic systems, Moving meshes, Invariant domains, Finite element method},
+abstract = {In this paper we construct an explicit approximation for the Lagrangian hydrodynamics equations equipped with an arbitrary equation of state. The approximation of the state variable is done with piecewise constant finite elements and the approximation of the mesh motion is done with higher-order continuous finite elements. The method is invariant-domain preserving and locally mass conservative. The purpose of this method is to be used in combination with higher-order methods to make them invariant domain preserving as well.}
+}
+
+@article{Guermond_Popov_Saavedra_Yong_2017,
+    AUTHOR = {Guermond, Jean-Luc and Popov, Bojan and Saavedra, Laura and
+              Yang, Yong},
+     TITLE = {Invariant domains preserving arbitrary {L}agrangian {E}ulerian
+              approximation of hyperbolic systems with continuous finite
+              elements},
+   JOURNAL = {SIAM J. Sci. Comput.},
+  FJOURNAL = {SIAM Journal on Scientific Computing},
+    VOLUME = {39},
+      YEAR = {2017},
+    NUMBER = {2},
+     PAGES = {A385--A414},
+      optISSN = {1064-8275},
+   MRCLASS = {65M60 (35L45 35L65 65M15)},
+  MRNUMBER = {3623697},
+MRREVIEWER = {Hamdullah Y\"ucel},
+       optURL = {https://doi.org/10.1137/16M1063034},
+}
+
+@article{Guermond_Popov_Saavedra_2020,
+title = {Second-order invariant domain preserving ALE approximation of hyperbolic systems},
+journal = {Journal of Computational Physics},
+volume = {401},
+pages = {108927},
+year = {2020},
+issn = {0021-9991},
+doi = {https://doi.org/10.1016/j.jcp.2019.108927},
+url = {https://www.sciencedirect.com/science/article/pii/S0021999119306321},
+author = {Jean-Luc Guermond and Bojan Popov and Laura Saavedra},
+keywords = {Conservation equations, Hyperbolic systems, Arbitrary Lagrangian Eulerian, Moving meshes, Invariant domains, Convex limiting},
+abstract = {In this paper we introduce an invariant domain preserving arbitrary Lagrangian Eulerian method for solving hyperbolic systems. The time stepping is explicit and the approximation in space is done with continuous finite elements. The method is second-order in space and made invariant domain preserving by using a newly introduced convex limiting technique.}
+}
+
+@article {Guermond_Popov_SINUM_2016,
+    AUTHOR = {Guermond, Jean-Luc and Popov, Bojan},
+     TITLE = {Invariant domains and first-order continuous finite element
+              approximation for hyperbolic systems},
+   JOURNAL = {SIAM J. Numer. Anal.},
+  FJOURNAL = {SIAM Journal on Numerical Analysis},
+    VOLUME = {54},
+      YEAR = {2016},
+    NUMBER = {4},
+     PAGES = {2466--2489},
+      optISSN = {0036-1429},
+   MRCLASS = {65M60 (35L45 35L65 65M12)},
+  MRNUMBER = {3537013},
+MRREVIEWER = {Beny Neta},
+}
+
+@article{guermond_wang_2025,
+title = {Mass conservative limiting and applications to the approximation of the steady-state radiation transport equations},
+journal = {Journal of Computational Physics},
+volume = {521},
+pages = {113531},
+year = {2025},
+issn = {0021-9991},
+doi = {https://doi.org/10.1016/j.jcp.2024.113531},
+url = {https://www.sciencedirect.com/science/article/pii/S0021999124007794},
+author = {Jean-Luc Guermond and Zuodong Wang},
+keywords = {Limiting, Advection equation, Radiation transport equation, Stiff sources, Conservation equations, Asymptotic preserving, Invariant domains},
+abstract = {A limiting technique for scalar transport equations is presented. The originality of the method is that it does not require solving nonlinear optimization problems nor does it rely on the construction of a low-order approximation. The method has minimal complexity and is numerically demonstrated to maintain high-order accuracy. The performance of the method is illustrated on the radiation transport equation.}
+}
+
+@article{guermond-2018-2nd-IDP,
+    author = {Jean-Luc Guermond and Murtazo Nazarov and Bojan Popov and Ignacio Tomas},
+    title = {Second-Order Invariant Domain Preserving Approximation of the Euler Equations Using Convex Limiting},
+    journal = {SIAM J. Sci. Comput.},
+    year = {2018},
+    volume={40},
+    issue={6},
+    pages={3211-3239}
+}
+
+@techreport{harlow-tr-1971,
+  author      = {Harlow, Francis H. and Amsden, Anthony A.},
+  title       = "Fluid Dynamics",
+  institution = "Los Alamos Scientific Laboratory",
+  year        = "1971",
+  type        = "",
+  number      = "LA-4700",
+  address     = "Los Alamos, NM 87544",
+  month       = "June"
+}
+
+@article {Harten_Lax_Levermore_Morojoff_1998,
+    AUTHOR = {Harten, Ami and Lax, Peter D. and Levermore, C. David and
+              Morokoff, William J.},
+     TITLE = {Convex entropies and hyperbolicity for general {E}uler
+              equations},
+   JOURNAL = {SIAM J. Numer. Anal.},
+  FJOURNAL = {SIAM Journal on Numerical Analysis},
+    VOLUME = {35},
+      YEAR = {1998},
+    NUMBER = {6},
+     PAGES = {2117--2127 (electronic)},
+      optISSN = {0036-1429},
+   MRCLASS = {76N15 (35L65 65M12)},
+  MRNUMBER = {1655839 (99j:76107)},
+MRREVIEWER = {Denis Serre},
+       optDOI = {10.1137/S0036142997316700},
+       optURL = {http://dx.doi.org/10.1137/S0036142997316700},
+}
+
+@article{harten_osher_1987,
+    author = {Harten, Ami and Osher, Stanley},
+    title = {Uniformly High-Order Accurate Nonoscillatory Schemes. I},
+    journal = {SIAM Journal on Numerical Analysis},
+    volume = {24},
+    number = {2},
+    pages = {279-309},
+    year = {1987},
+    doi = {10.1137/0724022},
+    URL = {https://doi.org/10.1137/0724022},
+    eprint = {https://doi.org/10.1137/0724022},
+    abstract = { We begin the construction and the analysis of nonoscillatory shock capturing methods for the approximation of hyperbolic conservation laws. These schemes share many desirable properties with total variation diminishing schemes, but TVD schemes have at most first-order accuracy, in the sense of truncation error, at extrema of the solution. In this paper we construct a uniformly second-order approximation, which is nonoscillatory in the sense that the number of extrema of the discrete solution is not increasing in time. This is achieved via a nonoscillatory piecewise-linear reconstruction of the solution from its cell averages, time evolution through an approximate solution of the resulting initial value problem and an average of this approximate solution over each cell. }
+}
+
+@TECHREPORT{hiop_techrep,
+  title={{HiOp} -- {U}ser {G}uide},
+  author={Petra, Cosmin G. and Chiang, NaiYuan and Jingyi Wang},
+  year={2018},
+  institution = {Center for Applied Scientific Computing, Lawrence Livermore National Laboratory},
+  number = {LLNL-SM-743591}
+}
+
+@book{hirn-1875,
+    author = {Hirn, Gustave Adolphe},
+    address = {Paris},
+    booktitle = {Exposition analytique et exp\'erimentale de la th\'eorie me\'ecanique de la chaleur. Tome premier},
+    edition = {Troisi\`eme \'edition / enti\`erement refondue.},
+    keywords = {Thermodynamics},
+    language = {fre},
+    publisher = {Gauthier-Villars, Imprimeur-Libraire},
+    title = {Exposition analytique et exp\'erimentale de la th\'eorie m\'ecanique de la chaleur. Tome premier },
+    year = {1875},
+}
+
+@article{hirt-1974,
+title = {An arbitrary Lagrangian-Eulerian computing method for all flow speeds},
+journal = {Journal of Computational Physics},
+volume = {14},
+number = {3},
+pages = {227-253},
+year = {1974},
+issn = {0021-9991},
+doi = {https://doi.org/10.1016/0021-9991(74)90051-5},
+url = {https://www.sciencedirect.com/science/article/pii/0021999174900515},
+author = {C.W Hirt and A.A Amsden and J.L Cook},
+abstract = {A new numerical technique is presented that has many advantages for obtaining solutions to a wide variety of time-dependent multidimensional fluid dynamics problems. The method uses a finite difference mesh with vertices that may be moved with the fluid (Lagrangian), be held fixed (Eulerian), or be moved in any other prescribed manner, as in the Arbitrary-Lagrangian-Eulerian (ALE) technique. In addition, it employs an implicit formulation similar to that of the Implicit Continuous-Fluid Eulerian (ICE) technique, making it applicable to flows at all speeds. This paper describes the basic methodology, presents finite difference approximations, and discusses such matters as stability, accuracy, and zoning. In addition, illustrations are included from a number of representative calculations.}
+}
+
+@article{hirt-nichols-1979,
+title = {Volume of fluid (VOF) method for the dynamics of free boundaries},
+journal = {Journal of Computational Physics},
+volume = {39},
+number = {1},
+pages = {201-225},
+year = {1981},
+issn = {0021-9991},
+doi = {https://doi.org/10.1016/0021-9991(81)90145-5},
+url = {https://www.sciencedirect.com/science/article/pii/0021999181901455},
+author = {C.W Hirt and B.D Nichols},
+abstract = {Several methods have been previously used to approximate free boundaries in finite-difference numerical simulations. A simple, but powerful, method is described that is based on the concept of a fractional volume of fluid (VOF). This method is shown to be more flexible and efficient than other methods for treating complicated free boundary configurations. To illustrate the method, a description is given for an incompressible hydrodynamics code, SOLA-VOF, that uses the VOF technique to track free fluid surfaces.}
+}
+
+@article{Hugoniot1889,
+  author    = {Hugoniot, Pierre-Henri},
+  title     = {Memoir on the Propagation of Movements in Bodies, Especially Perfect Gases (Second Part)},
+  journal   = {Journal de l'\'ecole Polytechnique},
+  year      = {1889},
+  volume    = {1},
+  pages     = {581},
+  keywords  = {Hugoniot, shock waves, perfect gases, thermodynamics, dynamics},
+}
+
+@article{irp,
+    author = {Hailiang Liu \& Yi Jiang},
+    year = {2018},
+    title = {Invariant-region-preserving DG methods for multi-dimensional hyperbolic conservation law systems, with an application to compressible Euler equations},
+    keywords = "Invariant-region-preserving"
+}
+
+@article{jia-zhang-2011,
+title = {A new high-order discontinuous Galerkin spectral finite element method for Lagrangian gas dynamics in two-dimensions},
+journal = {Journal of Computational Physics},
+volume = {230},
+number = {7},
+pages = {2496-2522},
+year = {2011},
+issn = {0021-9991},
+doi = {https://doi.org/10.1016/j.jcp.2010.12.023},
+url = {https://www.sciencedirect.com/science/article/pii/S002199911000687X},
+author = {Zupeng Jia and Shudao Zhang},
+keywords = {Cell-centered Lagrangian scheme, High-order schemes, Runge–Kutta discontinuous Galerkin method, Geometrical conservation law, HWENO reconstruction, Compressible Euler equations},
+abstract = {This paper presents a new high-order cell-centered Lagrangian scheme for two-dimensional compressible flow. The scheme uses a fully Lagrangian form of the gas dynamics equations, which is a weakly hyperbolic system of conservation laws. The system of equations is discretized in the Lagrangian space by discontinuous Galerkin method using a spectral basis. The vertex velocities and the numerical fluxes through the cell interfaces are computed consistently in the Eulerian space by virtue of an improved nodal solver. The nodal solver uses the HLLC approximate Riemann solver to compute the velocities of the vertex. The time marching is implemented by a class of TVD Runge–Kutta type methods. A new HWENO (Hermite WENO) reconstruction algorithm is developed and used as limiters for RKDG methods to maintain compactness of RKDG methods. The scheme is conservative for the mass, momentum and total energy. It can maintain high-order accuracy both in space and time, obey the geometrical conservation law, and achieve at least second order accuracy on quadrilateral meshes. Results of some numerical tests are presented to demonstrate the accuracy and the robustness of the scheme.}
+}
+
+@article{kluth-despres-2010,
+title = {Discretization of hyperelasticity on unstructured mesh with a cell-centered Lagrangian scheme},
+journal = {Journal of Computational Physics},
+volume = {229},
+number = {24},
+pages = {9092-9118},
+year = {2010},
+issn = {0021-9991},
+doi = {https://doi.org/10.1016/j.jcp.2010.08.024},
+url = {https://www.sciencedirect.com/science/article/pii/S0021999110004717},
+author = {G. Kluth and B. Després},
+keywords = {Hyperelasticity, Hyperbolic, Lagrangian, Unstructured mesh, Solid dynamic, Hydrodynamic},
+abstract = {We present a new cell-centered Lagrangian scheme on unstructured mesh for hyperelasticity. It is based on the recently proposed Glace scheme [11] for compressible gas dynamics. We show how to use the multiplicative decomposition of the gradient of deformation and the entropy property to derive the new scheme. We also prove the compatibility of this discretization with usual calculations of mass. Our motivation is to use hyperelasticity models for the study of finite plasticity, which is an extension of hypoelasticity to finite deformations. Hyperelasticity is a natural choice for extended models in solid mechanics, because of its mathematical structure which is a system of conservation laws with full rotational invariance. We study these properties for the Lagrangian system, and detail the various Eulerian formulations. We present several test problems, in 1D and 2D planar cases, which shows the capability of the scheme to capture complex shock-waves and to simulate solid–fluid problems. In this article, we use a special equation of state [21]. Its interest is twofold: we can calculate multi-dimensional plastic phenomenon (such as split shock in 1D uniaxial cases or particular shapes in Taylor test-case), and it gives interesting multi-dimensional test cases for hyperelastic planar schemes.}
+}
+
+@article{lax-1954,
+author = {Lax, Peter D.},
+title = {Weak solutions of nonlinear hyperbolic equations and their numerical computation},
+journal = {Communications on Pure and Applied Mathematics},
+volume = {7},
+number = {1},
+pages = {159-193},
+doi = {https://doi.org/10.1002/cpa.3160070112},
+url = {https://onlinelibrary.wiley.com/doi/abs/10.1002/cpa.3160070112},
+eprint = {https://onlinelibrary.wiley.com/doi/pdf/10.1002/cpa.3160070112},
+year = {1954}
+}
+
+@article{LeMetayer_Saurel_2016,
+  author    = {Olivier Le M{\'e}tayer and Richard Saurel},
+  title     = {The Noble-Abel Stiffened-Gas equation of state},
+  journal   = {Physics of Fluids},
+  volume    = {28},
+  number    = {4},
+  pages     = {046102},
+  year      = {2016},
+  publisher = {AIP Publishing},
+  DOI       = {10.1063/1.4945981},
+  url       = {https://doi.org/10.1063/1.4945981}
+}
+
+@article{Lesoinne_Farhat_cmame_1999,
+	author = {Michel Lesoinne and Charbel Farhat},
+	optdoi = {10.1016/0045-7825(96)01028-6},
+	optissn = {0045-7825},
+	journal = {Computer Methods in Applied Mechanics and Engineering},
+	number = {1},
+	pages = {71–90},
+	title = {Geometric conservation laws for flow problems with moving boundaries and deformable meshes, and their impact on aeroelastic computations},
+	opturl = {https://www.sciencedirect.com/science/article/pii/0045782596010286},
+	volume = {134},
+	year = {1996}
+}
+
+@article{li-yu-jia-2014,
+title = {The cell-centered discontinuous Galerkin method for Lagrangian compressible Euler equations in two-dimensions},
+journal = {Computers \& Fluids},
+volume = {96},
+pages = {152-164},
+year = {2014},
+issn = {0045-7930},
+doi = {https://doi.org/10.1016/j.compfluid.2014.03.018},
+url = {https://www.sciencedirect.com/science/article/pii/S0045793014001170},
+author = {Zhenzhen Li and Xijun Yu and Zupeng Jia},
+keywords = {Cell-centered Lagrangian scheme, Compressible Euler equations, RKDG method},
+abstract = {This paper presents a new cell-centered Lagrangian scheme for two-dimensional compressible flow. The new scheme uses a semi-Lagrangian form of the Euler equations. The system of equations is discretized by discontinuous Galerkin (DG) method using the Taylor basis. The vertex velocities and the numerical fluxes through the cell interfaces are computed consistently by a nodal solver. The mesh moves with the fluid flow. The time marching is implemented by a class of the Runge–Kutta (RK) methods. A WENO reconstruction is used as a limiter for the RKDG method. The scheme is conservative for the mass, momentum and total energy, and obeys the geometrical conservation law. The scheme maintains high-order accuracy and has free parameters. Results of some numerical tests are presented to demonstrate the accuracy and the robustness of the scheme.}
+}
+
+@article{liu-morgan-burton-2018,
+title = {A Lagrangian discontinuous Galerkin hydrodynamic method},
+journal = {Computers \& Fluids},
+volume = {163},
+pages = {68-85},
+year = {2018},
+issn = {0045-7930},
+doi = {https://doi.org/10.1016/j.compfluid.2017.12.007},
+url = {https://www.sciencedirect.com/science/article/pii/S0045793017304449},
+author = {Xiaodong Liu and Nathaniel R. Morgan and Donald E. Burton},
+keywords = {Lagrangian, Hydrodynamics, Discontinuous Galerkin, Taylor basis, Cell-centered, Compressible flows, Shocks},
+abstract = {We present a new Lagrangian discontinuous Galerkin (DG) hydrodynamic method for solving the two-dimensional gas dynamic equations on unstructured hybrid meshes. The physical conservation laws for the momentum and total energy are discretized using a DG method based on linear Taylor expansions. Three different approaches are investigated for calculating the density variation over the element. The first approach evolves a Taylor expansion of the specific volume field. The second approach follows certain finite element methods and uses the strong mass conservation to calculate the density field at a location inside the element or on the element surface. The third approach evolves a Taylor expansion of the density field. The nodal velocity, and the corresponding forces, are explicitly calculated by solving a multidirectional approximate Riemann problem. An effective limiting strategy is presented that ensures monotonicity of the primitive variables. This new Lagrangian DG hydrodynamic method conserves mass, momentum, and total energy. Results from a suite of test problems are presented to demonstrate the robustness and expected second-order accuracy of this new method.}
+}
+
+@article{Loubere_2010,
+title = {ReALE: A reconnection-based arbitrary-Lagrangian–Eulerian method},
+journal = {Journal of Computational Physics},
+volume = {229},
+number = {12},
+pages = {4724-4761},
+year = {2010},
+issn = {0021-9991},
+doi = {https://doi.org/10.1016/j.jcp.2010.03.011},
+url = {https://www.sciencedirect.com/science/article/pii/S002199911000121X},
+author = {Raphaël Loubère and Pierre-Henri Maire and Mikhail Shashkov and Jérôme Breil and Stéphane Galera},
+keywords = {Lagrangian hydrodynamics, Cell-centered scheme, Compressible flow, Staggered scheme, Voronoi mesh, Arbitrary-Lagrangian–Eulerian, Mesh reconnection, Multi-dimensional unstructured polygonal mesh},
+abstract = {We present a new reconnection-based arbitrary-Lagrangian–Eulerian (ALE) method. The main elements in a standard ALE simulation are an explicit Lagrangian phase in which the solution and grid are updated, a rezoning phase in which a new grid is defined, and a remapping phase in which the Lagrangian solution is transferred (conservatively interpolated) onto the new grid. In standard ALE methods the new mesh from the rezone phase is obtained by moving grid nodes without changing connectivity of the mesh. Such rezone strategy has its limitation due to the fixed topology of the mesh. In our new method we allow connectivity of the mesh to change in rezone phase, which leads to general polygonal mesh and allows to follow Lagrangian features of the mesh much better than for standard ALE methods. Rezone strategy with reconnection is based on using Voronoi tessellation. We demonstrate performance of our new method on series of numerical examples and show it superiority in comparison with standard ALE methods without reconnection.}
+}
+
+@article{loubere2011staggered,
+  title={Staggered Lagrangian discretization based on cell-centered Riemann solver and associated hydrodynamics scheme},
+  author={Loubere, R and Maire, PH and V{\'a}chal, P},
+  journal={Communication in Computational Physics},
+  volume={10},
+  number={4},
+  pages={940--978},
+  year={2011}
+}
+
+@article{Maire_abgrall_Breil_Ovadia_2007,
+author = {Maire, Pierre-Henri and Abgrall, R\'emi and Breil, J\'erôme and Ovadia, Jean},
+optdoi = {10.1137/050633019},
+opteprint = { https://doi.org/10.1137/050633019 },
+journal = {SIAM Journal on Scientific Computing},
+number = {4},
+pages = {1781–1824},
+title = {A Cell-Centered Lagrangian Scheme for Two-Dimensional Compressible Flow Problems},
+opturl = {https://doi.org/10.1137/050633019},
+volume = {29},
+year = {2007}
+}
+
+@article{maire-breil-galera-2004,
+author = {Maire, Pierre-Henri and Breil, Jérôme and Galera, Stéphane},
+year = {2008},
+month = {03},
+pages = {1161 - 1166},
+title = {A cell-centered Arbitrary Lagrangian–Eulerian (ALE) method},
+volume = {56},
+journal = {International Journal for Numerical Methods in Fluids},
+doi = {10.1002/fld.1557}
+}
+
+@article{maire-breil-galera-2010,
+author = {Galera, St\'{e}phane and Maire, Pierre-Henri and Breil, J\'{e}r\^{o}me},
+title = {A two-dimensional unstructured cell-centered multi-material ALE scheme using VOF interface reconstruction},
+year = {2010},
+issue_date = {August, 2010},
+publisher = {Academic Press Professional, Inc.},
+address = {USA},
+volume = {229},
+number = {16},
+issn = {0021-9991},
+url = {https://doi.org/10.1016/j.jcp.2010.04.019},
+doi = {10.1016/j.jcp.2010.04.019},
+abstract = {We present a new cell-centered multi-material arbitrary Lagrangian-Eulerian (ALE) scheme to solve the compressible gas dynamics equations on two-dimensional unstructured grid. Our ALE method is of the explicit time-marching Lagrange plus remap type. Namely, it involves the following three phases: a Lagrangian phase wherein the flow is advanced using a cell-centered scheme; a rezone phase in which the nodes of the computational grid are moved to more optimal positions; a cell-centered remap phase which consists of interpolating conservatively the Lagrangian solution onto the rezoned grid. The multi-material modeling utilizes either concentration equations for miscible fluids or the Volume Of Fluid (VOF) capability with interface reconstruction for immiscible fluids. The main original feature of this ALE scheme lies in the introduction of a new mesh relaxation procedure which keeps the rezoned grid as close as possible to the Lagrangian one. In this formalism, the rezoned grid is defined as a convex combination between the Lagrangian grid and the grid resulting from condition number smoothing. This convex combination is constructed through the use of a scalar parameter which is a scalar function of the invariants of the Cauchy-Green tensor over the Lagrangian phase. Regarding the cell-centered remap phase, we employ two classical methods based on a partition of the rezoned cell in terms of its overlap with the Lagrangian cells. The first one is a simplified swept face-based method whereas the second one is a cell-intersection-based method. Our multi-material ALE methodology is assessed through several demanding two-dimensional tests. The corresponding numerical results provide a clear evidence of the robustness and the accuracy of this new scheme.},
+journal = {J. Comput. Phys.},
+month = aug,
+pages = {5755–5787},
+numpages = {33},
+keywords = {Arbitrary Lagrangian-Eulerian methodology, Cell-centered scheme, Compressible flow, Godunov-type method, High-order finite volume methods, Interface reconstruction, Lagrangian hydrodynamics, Multi-dimensional unstructured mesh}
+}
+
+@article {Maire_JCP_2009,
+    AUTHOR = {Maire, Pierre-Henri},
+     TITLE = {A high-order cell-centered {L}agrangian scheme for
+              two-dimensional compressible fluid flows on unstructured
+              meshes},
+   JOURNAL = {J. Comput. Phys.},
+  FJOURNAL = {Journal of Computational Physics},
+    VOLUME = {228},
+      YEAR = {2009},
+    NUMBER = {7},
+     PAGES = {2391--2425},
+      ISSN = {0021-9991},
+   MRCLASS = {65M06 (76M25)},
+  MRNUMBER = {2501692},
+MRREVIEWER = {Miloslav Feistauer},
+       DOI = {10.1016/j.jcp.2008.12.007},
+       optURL = {https://doi.org/10.1016/j.jcp.2008.12.007},
+}
+
+@article{maire-nkonga-2009,
+  TITLE = {{Multi-scale Godunov-type method for cell-centered discrete Lagrangian hydrodynamics.}},
+  AUTHOR = {Maire, P.H. and Nkonga, Boniface},
+  URL = {https://inria.hal.science/inria-00290717},
+  JOURNAL = {{Journal of Computational Physics}},
+  PUBLISHER = {{Elsevier}},
+  VOLUME = {Volume 228},
+  NUMBER = {Issue 3, 20 February 2009},
+  PAGES = {Pages 799-821},
+  YEAR = {2009},
+  DOI = {10.1016/j.jcp.2008.10.012},
+  KEYWORDS = {Lagrangian hydrodynamics ; finite volume method ; unstructured ; multidimensional},
+  PDF = {https://inria.hal.science/inria-00290717v1/file/article_bph.pdf},
+  HAL_ID = {inria-00290717},
+  HAL_VERSION = {v1},
+}
+
+@article{mooney-1940,
+  author  = {Mooney, M.},
+  title   = {A Theory of Large Elastic Deformation},
+  journal = {Journal of Applied Physics},
+  year    = {1940},
+  volume  = {11},
+  number  = {9},
+  pages   = {582--592},
+  doi     = {10.1063/1.1712836},
+  issn    = {0021-8979},
+  url     = {https://doi.org/10.1063/1.1712836}
+}
+
+
+@article{Neron_2022,
+   title={Noble–Abel/first-order virial equations of state for gas mixtures resulting from multiple condensed reactive materials combustion},
+   volume={34},
+   ISSN={1089-7666},
+   url={http://dx.doi.org/10.1063/5.0079187},
+   DOI={10.1063/5.0079187},
+   number={1},
+   journal={Physics of Fluids},
+   publisher={AIP Publishing},
+   author={Neron, Loann and Saurel, Richard},
+   year={2022},
+   month=jan }
+
+@article {Nobile_1999,
+    AUTHOR = {Formaggia, L. and Nobile, F.},
+     TITLE = {A stability analysis for the arbitrary {L}agrangian {E}ulerian
+              formulation with finite elements},
+   JOURNAL = {East-West J. Numer. Math.},
+  FJOURNAL = {East-West Journal of Numerical Mathematics},
+    VOLUME = {7},
+      YEAR = {1999},
+    NUMBER = {2},
+     PAGES = {105--131},
+      ISSN = {0928-0200},
+   MRCLASS = {65M12 (35K99 65M60 76M10)},
+  MRNUMBER = {1699243},
+MRREVIEWER = {John C. Strikwerda},
+}
+
+@InProceedings{noh-woodward-slic,
+author="Noh, W. F.
+and Woodward, Paul",
+editor="van de Vooren, Adriaan I.
+and Zandbergen, Pieter J.",
+title="SLIC (Simple Line Interface Calculation)",
+booktitle="Proceedings of the Fifth International Conference on Numerical Methods in Fluid Dynamics June 28 -- July 2, 1976 Twente University, Enschede",
+year="1976",
+publisher="Springer Berlin Heidelberg",
+address="Berlin, Heidelberg",
+pages="330--340",
+abstract="SLIC is an alternating-direction method for the geometric approximation of fluid interfaces. It may be used in one, two, or three space dimensions, and it is characterized by the following features: (1) Fluid surfaces are represented locally for each mixed- fluid zone, and these surfaces are defined as a composition of one space dimensional components, one for each coordinate direction. (2) These onedimensional components are composed entirely of straight lines, either perpendicular to or parallel to that coordinate direction. (3) The one-dimensional surface approximations for a mixed fluid cell are completely determined by testing whether or not the various fluids in the mixed cell are present or absent in the zone just to the left and to the right in the coordinate direction under consideration. (4) Because of the completely one-dimensional nature of the SLIC interface description, it is relatively easy to advance the fluid surfaces correctly in time. With the SLIC fluid-surface definitions, it should be possible to incorporate any one space dimensional method for advancing contact discontinuities. This makes SLIC very practical for the numerical solution of fluid dynamical problems.",
+isbn="978-3-540-37548-7"
+}
+
+@article{ramsey_2010,
+  author       = {Ramsey, Scott D and Brown, Lowell S and Nelson, Eric M and Alme, Marv L},
+  title        = {A class of self-similar hydrodynamics test problems},
+  annote       = {We consider self-similar solutions to the gas dynamics equations. One such solution - a spherical geometry Gaussian density profile - has been analyzed in the existing literature, and a connection between it, a linear velocity profile, and a uniform specific internal energy profile has been identified. In this work, we assume the linear velocity profile to construct an entire class of self-similar sol utions in both cylindrical and spherical geometry, of which the Gaussian form is one possible member. After completing the derivation, we present some results in the context of a test problem for compressible flow codes.},
+  url          = {https://www.osti.gov/biblio/1043471},
+  place        = {United States},
+  year         = {2010},
+  month        = {12}
+}
+
+@article{rankine-1870,
+author = {Rankine, William John Macquorn },
+title = {XV. On the thermodynamic theory of waves of finite longitudinal disturbance},
+journal = {Philosophical Transactions of the Royal Society of London},
+volume = {160},
+number = {},
+pages = {277-288},
+year = {1870},
+doi = {10.1098/rstl.1870.0015},
+
+URL = {https://royalsocietypublishing.org/doi/abs/10.1098/rstl.1870.0015},
+eprint = {https://royalsocietypublishing.org/doi/pdf/10.1098/rstl.1870.0015}
+,
+    abstract = { § 1. The object of the present investigation is to determine the relations which must exist between the laws of the elasticity of any substance, whether gaseous, liquid, or solid, and those of the wave-like propagation of a finite longitudinal disturbance in that substance; in other words, of a disturbance consisting in displacements of particles along the direction of propagation, the velocity of displacement of the particles being so great that it is not to be neglected in comparison with the velocity of propagation. In particular, the investigation aims at ascertaining what conditions as to the transfer of heat from particle to particle must be fulfilled in order that a finite longitudinal disturbance may be propagated along a prismatic or cylindrical mass without loss of energy or change of type: the word type being used to denote the relation between the extent of disturbance at a given instant of a set of particles, and their respective undisturbed positions. The disturbed matter in these inquiries may be conceived to be contained in a straight tube of uniform cross-section and indefinite length. § 2. Mass-Velocity.—A convenient quantity in the present investigation, is what may be termed the mass-velocity or somatic velocity—that is to say, the mass of matter through which a disturbance is propagated in a unit of time while advancing along a prism of the sectional area unity. That mass-velocity will be denoted by m. }
+}
+
+@article{rannacher_turek_1992,
+    author = {Rolf Rannacher \& Stefan Turek},
+    year = {1992},
+    title = {Simple nonconforming quadrilateral Stokes element},
+    DOI = {https://onlinelibrary.wiley.com/doi/10.1002/num.1690080202},
+    journal = {Numerical Methods for Partial Differential Equations},
+    volume={8},
+    issue={2},
+    pages={97-111}
+}
+
+@article{rivlin-1948,
+    author = {Rivlin, R. S. },
+    title = {Large elastic deformations of isotropic materials IV. further developments of the general theory},
+    journal = {Philosophical Transactions of the Royal Society of London. Series A, Mathematical and Physical Sciences},
+    volume = {241},
+    number = {835},
+    pages = {379-397},
+    year = {1948},
+    doi = {10.1098/rsta.1948.0024},
+    URL ={https://royalsocietypublishing.org/doi/abs/10.1098/rsta.1948.0024},
+    eprint = {https://royalsocietypublishing.org/doi/pdf/10.1098/rsta.1948.0024},
+    abstract = { The equations of motion, boundary conditions and stress-strain relations for a highly elastic material can be expressed in terms of the stored-energy function. This has been done in part I of this series (Rivlin 1948 a), for both the cases of compressible and incompressible materials, following the methods given by E. \&amp; F. Cosserat for compressible materials. The stored-energy function may be defined for a particular material in terms of the invariants of strain. The form in which the equations of motion, etc., are deduced, in the previous paper, does not permit the evaluation of the forces necessary to produce a specified deformation unless the actual expression for the stored-energy function in terms of the scalar invariants of the strain is introduced. In the present paper, the equations are transformed into forms more suitable for carrying out such an explicit evaluation. As examples, the surface forces necessary to produce simple shear in a cuboid of either compressible or incompressible material and those required to produce simple torsion in a right-circular cylinder of incompressible material are derived. }
+}
+
+//Saltzmann problem
+@unpublished{saltzmann-unpub-lab-report,
+author  = "J. Saltzman and P. Colella",
+title   = "LA-UR-85-678",
+note    = "unpublished",
+year    = 1985
+}
+
+@article {Sandu_Tomov_Kolev_2021,
+    AUTHOR = {Sandu, Adrian and Tomov, Vladimir and Cervena, Lenka and
+              Kolev, Tzanio},
+     TITLE = {Conservative high-order time integration for {L}agrangian
+              hydrodynamics},
+   JOURNAL = {SIAM J. Sci. Comput.},
+  FJOURNAL = {SIAM Journal on Scientific Computing},
+    VOLUME = {43},
+      YEAR = {2021},
+    NUMBER = {1},
+     PAGES = {A221--A241},
+      optISSN = {1064-8275},
+   MRCLASS = {65M60 (65L06 65M12 76Nxx)},
+  MRNUMBER = {4198575},
+       optDOI = {10.1137/20M1314495},
+       optURL = {https://doi.org/10.1137/20M1314495},
+}
+
+@article{Schmidtmann2016,
+  author    = {Birte Schmidtmann and R{\'e}mi Abgrall and Manuel Torrilhon},
+  title     = {On third-order limiter functions for finite volume methods},
+  journal   = {Bulletin of the Brazilian Mathematical Society, New Series},
+  year      = {2016},
+  volume    = {47},
+  number    = {2},
+  pages     = {753--764},
+  doi       = {10.1007/s00574-016-0183-5},
+  url       = {https://doi.org/10.1007/s00574-016-0183-5},
+  issn      = {1678-7714}
+}
+
+@article{schroder-neff-2003,
+title = {Invariant formulation of hyperelastic transverse isotropy based on polyconvex free energy functions},
+journal = {International Journal of Solids and Structures},
+volume = {40},
+number = {2},
+pages = {401-445},
+year = {2003},
+issn = {0020-7683},
+doi = {https://doi.org/10.1016/S0020-7683(02)00458-4},
+url = {https://www.sciencedirect.com/science/article/pii/S0020768302004584},
+author = {Jörg Schröder and Patrizio Neff},
+keywords = {Non-linear elasticity, Anisotropy, Polyconvexity, Existence of minimizers},
+abstract = {In this paper we propose a formulation of polyconvex anisotropic hyperelasticity at finite strains. The main goal is the representation of the governing constitutive equations within the framework of the invariant theory which automatically fulfill the polyconvexity condition in the sense of Ball in order to guarantee the existence of minimizers. Based on the introduction of additional argument tensors, the so-called structural tensors, the free energies and the anisotropic stress response functions are represented by scalar-valued and tensor-valued isotropic tensor functions, respectively. In order to obtain various free energies to model specific problems which permit the matching of data stemming from experiments, we assume an additive structure. A variety of isotropic and anisotropic functions for transversely isotropic material behaviour are derived, where each individual term fulfills a priori the polyconvexity condition. The tensor generators for the stresses and moduli are evaluated in detail and some representative numerical examples are presented. Furthermore, we propose an extension to orthotropic symmetry.}
+}
+
+@article{Scovazzi_2007,
+title = {Stabilized shock hydrodynamics: II. Design and physical interpretation of the SUPG operator for Lagrangian computations},
+journal = {Computer Methods in Applied Mechanics and Engineering},
+volume = {196},
+number = {4},
+pages = {967-978},
+year = {2007},
+issn = {0045-7825},
+doi = {https://doi.org/10.1016/j.cma.2006.08.009},
+url = {https://www.sciencedirect.com/science/article/pii/S0045782506002386},
+author = {G. Scovazzi},
+keywords = {Variational multiscale methods, Stabilized methods, SUPG methods, Lagrangian hydrodynamics, Kuropatenko viscosity, Linear viscosity, Invariance, Galilean transformations},
+abstract = {A new SUPG-stabilized formulation for Lagrangian Hydrodynamics of materials satisfying the Mie–Grüneisen equation of state was presented in the first paper of the series [G. Scovazzi, M.A. Christon, T.J.R. Hughes, J.N. Shadid, Stabilized shock hydrodynamics: I. A Lagrangian method, Comput. Methods Appl. Mech. Engrg., in press, doi:10.1016/j.cma.2006.08.008]. The present article investigates in more detail the design of the SUPG stabilization operator, focusing on its multiscale and physical interpretations. Connections with the analysis of Kuropatenko [V.F. Kuropatenko, On difference methods for the equations of hydrodynamics, in: N.N. Janenko (Ed.), Difference Methods for Solutions of Problems of Mathematical Physics, I, American Mathematical Society, Providence, RI, 1967] for discontinuity-capturing operators in the limit of weak shocks are shown. Galilean invariance requirements for the SUPG operator are explored and corroborated by numerical evidence. This work is intended to elucidate the profound physical significance of the SUPG operator as a subgrid interaction model.}
+}
+
+@article{scovazzi-christon-hughes-shadid-2007,
+title = {Stabilized shock hydrodynamics: I. A Lagrangian method},
+journal = {Computer Methods in Applied Mechanics and Engineering},
+volume = {196},
+number = {4},
+pages = {923-966},
+year = {2007},
+issn = {0045-7825},
+doi = {https://doi.org/10.1016/j.cma.2006.08.008},
+url = {https://www.sciencedirect.com/science/article/pii/S0045782506002374},
+author = {G. Scovazzi and M.A. Christon and T.J.R. Hughes and J.N. Shadid},
+keywords = {Lagrangian shock hydrodynamics, SUPG stabilization, Variational multiscale methods, Stabilized methods},
+abstract = {A new SUPG-stabilized formulation for Lagrangian hydrodynamics of materials satisfying Mie–Grüneisen equation of state is proposed. It allows the use of simplex-type (triangular/tetrahedral) meshes as well as the more commonly used brick-type (quadrilateral/hexahedral) meshes. The proposed method yields a globally conservative formulation, in which equal-order interpolation (P1 or Q1 isoparametric finite elements) is applied to velocities, displacements, and pressure. As a direct consequence, and in contrast to traditional cell-centered multidimensional hydrocode implementations, the proposed formulation allows a natural representation of the pressure gradient on element interiors. The SUPG stabilization involves additional design requirements, specific to the Lagrangian formulation. A discontinuity capturing operator in the form of a Noh-type viscosity with artificial heat flux is used to preserve stability and smoothness of the solution in shock regions. A set of challenging shock hydrodynamics benchmark tests for the Euler equations of gas dynamics in one and two space dimensions is presented. In the two-dimensional case, computations performed on quadrilateral and triangular grids are analyzed and compared. These results indicate that the new formulation is a promising technology for hydrocode applications.}
+}
+
+@article{scovazzi-shadid-love-rider-2010,
+title = {A conservative nodal variational multiscale method for Lagrangian shock hydrodynamics},
+journal = {Computer Methods in Applied Mechanics and Engineering},
+volume = {199},
+number = {49},
+pages = {3059-3100},
+year = {2010},
+issn = {0045-7825},
+doi = {https://doi.org/10.1016/j.cma.2010.03.027},
+url = {https://www.sciencedirect.com/science/article/pii/S0045782510001040},
+author = {G. Scovazzi and J.N. Shadid and E. Love and W.J. Rider},
+keywords = {Lagrangian shock hydrodynamics, Stabilized methods, Variational multiscale analysis, Updated Lagrangian formulation, Hourglass control, Nodal finite element method},
+abstract = {A new method based on a continuous, piece-wise linear approximation of the equations for Lagrangian shock hydrodynamics is presented. Numerical instabilities are controlled by a stabilizing operator derived using the paradigm of the variational multiscale analysis. Encouraging numerical comparisons with existing methods in the case of quadrilateral and hexahedral elements indicate that the proposed method is capable of preventing hourglass patterns in the solution, while maintaining accuracy in regions of smooth flow. The proposed approach satisfies Galilean invariance properties and hinges upon the interpretation of the Lagrangian shock hydrodynamics equations as a system of nonlinear wave equations. A specific implementation in terms of a predictor/multi-corrector version of the mid-point time integrator guarantees global conservation of mass, momentum, and total energy for each iterate. Stability and formal order of accuracy are investigated applying the von Neumann analysis to the linearized shock hydrodynamics equations in one dimension. This approach yields tight bounds for stable time-step estimation, formal second-order accuracy of the method in time and space, and valuable indications on the choice of the most appropriate values for the stabilization parameters present in the formulation.}
+}
+
+@article {Scovazzi_2012,
+    AUTHOR = {Scovazzi, G.},
+     TITLE = {Lagrangian shock hydrodynamics on tetrahedral meshes: a stable
+              and accurate variational multiscale approach},
+   JOURNAL = {J. Comput. Phys.},
+  FJOURNAL = {Journal of Computational Physics},
+    VOLUME = {231},
+      YEAR = {2012},
+    NUMBER = {24},
+     PAGES = {8029--8069},
+      optISSN = {0021-9991},
+   MRCLASS = {76L05 (76M10)},
+  MRNUMBER = {2979840},
+       optDOI = {10.1016/j.jcp.2012.06.033},
+       optURL = {https://doi.org/10.1016/j.jcp.2012.06.033},
+}
+
+@article{Scovazzi_Love_2009,
+author = {Scovazzi, G. and Love, E.},
+title = {A generalized view on Galilean invariance in stabilized compressible flow computations},
+journal = {International Journal for Numerical Methods in Fluids},
+volume = {64},
+number = {10-12},
+pages = {1065-1083},
+keywords = {variational multi-scale methods, stabilized methods, SUPG methods, Galilean transformations, invariance},
+doi = {https://doi.org/10.1002/fld.2417},
+url = {https://onlinelibrary.wiley.com/doi/abs/10.1002/fld.2417},
+eprint = {https://onlinelibrary.wiley.com/doi/pdf/10.1002/fld.2417},
+abstract = {Abstract This article presents a generalized analysis on the significance of Galilean invariance in compressible flow computations with stabilized and variational multi-scale methods. The understanding of the key issues and the development of general approaches to Galilean-invariant stabilization are facilitated by the use of a matrix-operator description of Galilean transformations. The analysis of invariance for discontinuity capturing operators is also included. Published in 2010 by John Wiley \& Sons, Ltd.},
+year = {2010}
+}
+
+@misc{sheng-wang,
+      title={High-order schemes for the Euler equations in cylindrical/spherical coordinates}, 
+      author={Sheng Wang and Eric Johnsen},
+      year={2017},
+      eprint={1701.04834},
+      archivePrefix={arXiv},
+      primaryClass={math.NA},
+      url={https://arxiv.org/abs/1701.04834}, 
+}
+
+@book{szabo,
+    author = {Barna Szabo \& Ivo Babuska},
+    year = {2011},
+    title = {Introduction to Finite Element Analysis},
+    publisher = {Wiley}
+}
+
+@book{Toro_2009,
+  author = {Eleuterio F. Toro},
+  year = {2009},
+  title = {Riemann Solvers and Numerical Methods for Fluid Dynamics: a Practical Introduction},
+  publisher = {Springer}
+}
+
+@phdthesis{van_der_waal_thesis,
+  author = {Johannes Diderik van der Waals},
+  title = {ver de continuiteit van dengasen vloeistoftoestand (On the Continuity of the Gaseousand Liquid States)},
+  school = {Universiteit Leiden},
+  year = {1873},
+}
+
+@article{Vilar_Maire_Abgrall_2014,
+title = {A discontinuous Galerkin discretization for solving the two-dimensional gas dynamics equations written under total Lagrangian formulation on general unstructured grids},
+journal = {Journal of Computational Physics},
+volume = {276},
+pages = {188-234},
+year = {2014},
+issn = {0021-9991},
+doi = {https://doi.org/10.1016/j.jcp.2014.07.030},
+url = {https://www.sciencedirect.com/science/article/pii/S0021999114005233},
+author = {François Vilar and Pierre-Henri Maire and Rémi Abgrall},
+keywords = {Discontinuous Galerkin discretization, Total Lagrangian formulation, Updated Lagrangian formulation, Cell-centered scheme, Godunov-type method, Unstructured moving grid, Curvilinear grid, Gas dynamics},
+abstract = {Based on the total Lagrangian kinematical description, a discontinuous Galerkin (DG) discretization of the gas dynamics equations is developed for two-dimensional fluid flows on general unstructured grids. Contrary to the updated Lagrangian formulation, which refers to the current moving configuration of the flow, the total Lagrangian formulation refers to the fixed reference configuration, which is usually the initial one. In this framework, the Lagrangian and Eulerian descriptions of the kinematical and the physical variables are related by means of the Piola transformation. Here, we describe a cell-centered high-order DG discretization of the physical conservation laws. The geometrical conservation law, which governs the time evolution of the deformation gradient, is solved by means of a finite element discretization. This approach allows to satisfy exactly the Piola compatibility condition. Regarding the DG approach, it relies on the use of a polynomial space approximation which is spanned by a Taylor basis. The main advantage in using this type of basis relies on its adaptability regardless the shape of the cell. The numerical fluxes at the cell interfaces are computed employing a node-based solver which can be viewed as an approximate Riemann solver. We present numerical results to illustrate the robustness and the accuracy up to third-order of our DG method. First, we show its ability to accurately capture geometrical features of a flow region employing curvilinear grids. Second, we demonstrate the dramatic improvement in symmetry preservation for radial flows.}
+}
+
+@article{Vilar_Shu_Maire_1D,
+title = {Positivity-preserving cell-centered Lagrangian schemes for multi-material compressible flows: From first-order to high-orders. Part I: The one-dimensional case},
+journal = {Journal of Computational Physics},
+volume = {312},
+pages = {385-415},
+year = {2016},
+issn = {0021-9991},
+doi = {https://doi.org/10.1016/j.jcp.2016.02.027},
+url = {https://www.sciencedirect.com/science/article/pii/S0021999116000917},
+author = {François Vilar and Chi-Wang Shu and Pierre-Henri Maire},
+keywords = {Positivity-preserving high-order methods, Cell-centered Lagrangian schemes, Updated and total Lagrangian formulations, Godunov-type method, Multi-material compressible flows, Equations of state, Riemann solver},
+abstract = {One of the main issues in the field of numerical schemes is to ally robustness with accuracy. Considering gas dynamics, numerical approximations may generate negative density or pressure, which may lead to nonlinear instability and crash of the code. This phenomenon is even more critical using a Lagrangian formalism, the grid moving and being deformed during the calculation. Furthermore, most of the problems studied in this framework contain very intense rarefaction and shock waves. In this paper, the admissibility of numerical solutions obtained by high-order finite-volume-scheme-based methods, such as the discontinuous Galerkin (DG) method, the essentially non-oscillatory (ENO) and the weighted ENO (WENO) finite volume schemes, is addressed in the one-dimensional Lagrangian gas dynamics framework. After briefly recalling how to derive Lagrangian forms of the 1D gas dynamics system of equations, a discussion on positivity-preserving approximate Riemann solvers, ensuring first-order finite volume schemes to be positive, is then given. This study is conducted for both ideal gas and non-ideal gas equations of state (EOS), such as the Jones–Wilkins–Lee (JWL) EOS or the Mie–Grüneisen (MG) EOS, and relies on two different techniques: either a particular definition of the local approximation of the acoustic impedances arising from the approximate Riemann solver, or an additional time step constraint relative to the cell volume variation. Then, making use of the work presented in [89], [90], [22], this positivity study is extended to high-orders of accuracy, where new time step constraints are obtained, and proper limitation is required. Through this new procedure, scheme robustness is highly improved and hence new problems can be tackled. Numerical results are provided to demonstrate the effectiveness of these methods. This paper is the first part of a series of two. The whole analysis presented here is extended to the two-dimensional case in [85], and proves to fit a wide range of numerical schemes in the literature, such as those presented in [19], [64], [15], [82], [84].}
+}
+
+@article{Vilar_Shu_Maire_2D,
+title = {Positivity-preserving cell-centered Lagrangian schemes for multi-material compressible flows: From first-order to high-orders. Part II: The two-dimensional case},
+journal = {Journal of Computational Physics},
+volume = {312},
+pages = {416-442},
+year = {2016},
+issn = {0021-9991},
+doi = {https://doi.org/10.1016/j.jcp.2016.01.037},
+url = {https://www.sciencedirect.com/science/article/pii/S0021999116000802},
+author = {François Vilar and Chi-Wang Shu and Pierre-Henri Maire},
+keywords = {Positivity-preserving high-order methods, Cell-centered Lagrangian schemes, Updated and total Lagrangian formulations, Godunov-type method, Unstructured moving grid, Multi-material compressible flows},
+abstract = {This paper is the second part of a series of two. It follows [44], in which the positivity-preservation property of methods solving one-dimensional Lagrangian gas dynamics equations, from first-order to high-orders of accuracy, was addressed. This article aims at extending this analysis to the two-dimensional case. This study is performed on a general first-order cell-centered finite volume formulation based on polygonal meshes defined either by straight line edges, conical edges, or any high-order curvilinear edges. Such formulation covers the numerical methods introduced in [6], [32], [5], [41], [43]. This positivity study is then extended to high-orders of accuracy. Through this new procedure, scheme robustness is highly improved and hence new problems can be tackled. Numerical results are provided to demonstrate the effectiveness of these methods. It is important to point out that even if this paper is concerned with purely Lagrangian schemes, the theory developed is of fundamental importance for any methods relying on a purely Lagrangian step, as ALE methods or non-direct Euler schemes.}
+}
+
+@article{vilar-2012,
+title = {Cell-centered discontinuous Galerkin discretization for two-dimensional Lagrangian hydrodynamics},
+journal = {Computers \& Fluids},
+volume = {64},
+pages = {64-73},
+year = {2012},
+issn = {0045-7930},
+doi = {https://doi.org/10.1016/j.compfluid.2012.05.001},
+url = {https://www.sciencedirect.com/science/article/pii/S0045793012001685},
+author = {François Vilar},
+keywords = {DG schemes, Lagrangian hydrodynamics, Initial configuration, Piola compatibility condition, Deformation gradient tensor},
+abstract = {We present a cell-centered discontinuous Galerkin discretization for the two-dimensional gas dynamics equations written using the Lagrangian coordinates related to the initial configuration of the flow, on general unstructured grids. A finite element discretization of the deformation gradient tensor is performed ensuring the satisfaction of the Piola compatibility condition at the discrete level. A specific treatment of the geometry is done, using finite element functions to discretize the deformation gradient tensor. The Piola compatibility condition and the Geometric Conservation law are satisfied by construction of the scheme. The DG scheme is constructed by means of a cellwise polynomial basis of Taylor type. Numerical fluxes at cell interface are designed to enforce a local entropy inequality.}
+}
+
+@article{vonNeumann-1950,
+  author  = {von Neumann, John and Richtmyer, Robert D.},
+  title   = {A Method for the Numerical Calculation of Hydrodynamic Shocks},
+  journal = {Journal of Applied Physics},
+  year    = {1950},
+  volume  = {21},
+  number  = {3},
+  pages   = {232--237},
+  doi     = {10.1063/1.1699639},
+  url     = {https://doi.org/10.1063/1.1699639},
+  issn    = {0021-8979}
+}
+
+@article {Wagner_1987,
+    AUTHOR = {Wagner, David H.},
+     TITLE = {Equivalence of the {E}uler and {L}agrangian equations of gas
+              dynamics for weak solutions},
+   JOURNAL = {J. Differential Equations},
+  FJOURNAL = {Journal of Differential Equations},
+    VOLUME = {68},
+      YEAR = {1987},
+    NUMBER = {1},
+     PAGES = {118--136},
+      optISSN = {0022-0396},
+   MRCLASS = {35L65 (35Q99 76N15)},
+  MRNUMBER = {885816},
+MRREVIEWER = {Reza Malek-Madani},
+       optDOI = {10.1016/0022-0396(87)90188-4},
+       optURL = {https://doi.org/10.1016/0022-0396(87)90188-4},
+}
+
+@phdthesis{wells,
+  author       = {B.V. Wells}, 
+  title        = {A Moving Mesh Finite Element Method for the Numerical Solution of Partial Differential Equations and Systems},
+  school       = {University of Reading},
+  year         = 2004,
+}
+
+@techreport{wilkins-1963,
+  author       = {Wilkins, M L},
+  title        = {CALCULATION OF ELASTIC-PLASTIC FLOW},
+  institution  = {California. Univ., Livermore.  Lawrence Radiation Lab.},
+  annote       = {Equations of state in the elastic and plastic regions are developed that 
+ provide a theoretical description applicable to a wide class of practical 
+ problems but uses simple idealizations of the real phenomenon.  The plastic state 
+ is described by continuously adjusting the stresses so that the yield strength is 
+ not exceeded.  One- and two-dimensional elastic-plastic flows are considered.  
+ (D.L.C.)
+},
+  url          = {https://www.osti.gov/biblio/4153725},
+  place        = {United States},
+  year         = {1963},
+  month        = {04}}
+
+@article{wu-shashkov-morgan-kuzmin-luo-2019,
+title = {An updated Lagrangian discontinuous Galerkin hydrodynamic method for gas dynamics},
+journal = {Computers \& Mathematics with Applications},
+volume = {78},
+number = {2},
+pages = {258-273},
+year = {2019},
+note = {Proceedings of the Eight International Conference on Numerical Methods for Multi-Material Fluid Flows (MULTIMAT 2017)},
+issn = {0898-1221},
+doi = {https://doi.org/10.1016/j.camwa.2018.03.040},
+url = {https://www.sciencedirect.com/science/article/pii/S0898122118301767},
+author = {T. Wu and M. Shashkov and N. Morgan and D. Kuzmin and H. Luo},
+keywords = {Lagrangian, Hydrodynamics, Discontinuous Galerkin, Limiters},
+abstract = {We present a new Lagrangian discontinuous Galerkin (DG) hydrodynamic method for gas dynamics. The new method evolves conserved unknowns in the current configuration, which obviates the Jacobi matrix that maps the element in a reference coordinate system or the initial coordinate system to the current configuration. The density, momentum, and total energy (ρ,ρu,E) are approximated with conservative higher-order Taylor expansions over the element and are limited toward a piecewise constant field near discontinuities using a limiter. Two new limiting methods are presented for enforcing the bounds on the primitive variables of density, velocity, and specific internal energy (ρ,u,e). The nodal velocity, and the corresponding forces, are calculated by solving an approximate Riemann problem at the element nodes. An explicit second-order method is used to temporally advance the solution. This new Lagrangian DG hydrodynamic method conserves mass, momentum, and total energy. 1D Cartesian coordinates test problem results are presented to demonstrate the accuracy and convergence order of the new DG method with the new limiters.}
+}
+
+@incollection {Young_2002,
+    AUTHOR = {Young, Robin},
+     TITLE = {The {$p$}-system. {I}. {T}he {R}iemann problem},
+ BOOKTITLE = {The legacy of the inverse scattering transform in applied
+              mathematics ({S}outh {H}adley, {MA}, 2001)},
+    SERIES = {Contemp. Math.},
+    VOLUME = {301},
+     PAGES = {219--234},
+ PUBLISHER = {Amer. Math. Soc., Providence, RI},
+      YEAR = {2002},
+   MRCLASS = {35L65 (35L67 35Q35 76N15)},
+  MRNUMBER = {1947368 (2004g:35158)},
+MRREVIEWER = {Fumioki Asakura},
+       optDOI = {10.1090/conm/301/05166},
+       optURL = {http://dx.doi.org/10.1090/conm/301/05166},
+}
