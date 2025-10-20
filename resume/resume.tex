@@ -1,0 +1,148 @@
+\documentclass{resume} % Use the custom resume.cls style
+
+\usepackage[left=0.4 in,top=0.4in,right=0.4 in,bottom=0.4in]{geometry} % Document margins
+\usepackage[nobottomtitles]{titlesec}
+\newcommand{\tab}[1]{\hspace{.2667\textwidth}\rlap{#1}} 
+\newcommand{\itab}[1]{\hspace{0em}\rlap{#1}}
+\name{Madison Sheridan} % Your name
+% You can merge both of these into a single line, if you do not have a website.
+\address{+1(916) 790-7806 \\ College Station, TX} 
+\address{\href{mailto:madison.sheridan94@gmail.com}{madison.sheridan94@gmail.com} \\ \href{https://www.linkedin.com/in/madison-sheridan/}{linkedin.com/in/madison-sheridan/} \\ \href{https://helblindi.github.io}{https://helblindi.github.io}}  %
+
+\input{summary}
+
+\begin{document}
+
+%----------------------------------------------------------------------------------------
+%	RESEARCH INTERESTS
+%----------------------------------------------------------------------------------------
+
+\begin{rSection}{\stitle}
+
+{\summary}
+
+
+\end{rSection}
+
+%----------------------------------------------------------------------------------------
+%  EXPERIENCE
+%----------------------------------------------------------------------------------------
+
+\begin{rSection}{EXPERIENCE}
+
+\textbf{Graduate Teaching/Research Assistant} \hfill Aug 2019 - Dec 2025\\
+Texas A\&M University \hfill \textit{College Station, TX}\\
+{\bf Advisor: Jean-Luc Guermond}
+ \begin{itemize}
+    % \itemsep -3pt {} 
+    \item Developed a finite element method for the equations of Lagrangian hydrodynamics that achieves high-order accuracy while preserving essential physical invariants, ensuring robustness in challenging flow regimes.
+    % \item Implemented novel techniques in C++ within MFEM, validated through convergence studies, benchmark problems, and HPC runs on the Whistler cluster.
+    \item Collaborated across mathematics, physics, and engineering teams; presented findings at SIAM CSE, USNCCM, and other national conferences.
+    \item Served as Instructor of Record for Math 140, independently leading classroom instruction, developing assignments and exams, and evaluating student performance.
+ \end{itemize}
+\vspace{1em}
+\textbf{Graduate Student Intern} \hfill May 2022 - September 2023\\
+Lawrence Livermore National Laboratory \hfill \textit{Livermore,  CA} \\
+{\bf Mentor: Vladimir Tomov}
+\begin{itemize}
+    \item Augmented high-order Lagrangian hydrodynamics codes in C++/MFEM with an invariant-domain preserving Lagrangian finite element method, ensuring physics-consistent robustness validated with benchmark tests.
+
+    \item Modified an MFEM discontinuous Galerkin advection solver for use with continuous finite element discretizations, extending code capabilities and supporting broader benchmarking.
+\end{itemize}
+ \vspace{1em}
+\textbf{Graduate Student Intern} \hfill Jan 2019 - April 2022\\
+Nevada National Security Site \hfill \textit{North Las Vegas, NV} \\
+{\bf Mentors: Cleat Zeiler, Marylesa Howard, Daniel Champion}
+ \begin{itemize}
+    % \itemsep -3pt {} 
+     \item Developed and trained deep learning models in Python/TensorFlow to reconstruct clipped seismic waveforms, improving signal fidelity and enabling more accurate seismic event detection.
+    \item Designed a Python-based multilateration algorithm using geophone array data to geolocate seismic signal sources with improved accuracy, supporting rapid deployment for field missions.
+ \end{itemize}
+
+\end{rSection} 
+%----------------------------------------------------------------------------------------
+%	EDUCATION SECTION
+%----------------------------------------------------------------------------------------
+
+\begin{rSection}{EDUCATION}
+
+% {\bf Master of Computer Science}, Stanford University \hfill {Expected 2020}\\
+% Relevant Coursework: A, B, C, and D.
+
+% {\bf Bachelor of Computer Science}, Stanford University \hfill {2014 - 2017}
+% Minor in Linguistics \smallskip \\
+% Member of Eta Kappa Nu \\
+% Member of Upsilon Pi Epsilon \\
+
+{\bf PhD, Mathematics}, Texas A\&M University, College Station, TX \hfill {Aug 2019 - Dec 2025} \\
+\textbf{Thesis:} A Robust Lagrangian Framework for Compressible Flow \& Hyperelasticity \\
+\textbf{Emphasis:} Finite Element Methods, Computation Fluid Dynamics, Partial Differential Equations \\
+
+{\bf Bachelor of Science, Mathematics (Computer Science minor)}, \hfill
+{Jan 2015 - Apr 2019} \\
+Brigham Young University - Idaho, Rexburg, ID 
+
+\end{rSection}
+
+%----------------------------------------------------------------------------------------
+%	WORK EXPERIENCE SECTION\cvitem{2024}{\textbf{Mentor}, Advised an undergraduate research project on nonlinear elasticity for the Modeling and Simulation with PDEs summer school, Texas A\&M University}
+
+\begin{rSection}{SKILLS}
+    \skills
+\end{rSection}
+%----------------------------------------------------------------------------------------
+
+% \begin{rSection}{PROJECTS}
+% \vspace{-1.25em}
+% \item \textbf{Hiring Search Tool.} {Built a tool to search for Hiring Managers and Recruiters by using ReactJS, NodeJS, Firebase and boolean queries. Over 25000 people have used it so far, with 5000+ queries being saved and shared, and search results even better than LinkedIn! \href{https://hiring-search.careerflow.ai/}{(Try it here)}}
+% \item \textbf{Short Project Title.} {Build a project that does something and had quantified success using A, B, and C. This project's description spans two lines and also won an award.}
+% \item \textbf{Short Project Title.} {Build a project that does something and had quantified success using A, B, and C. This project's description spans two lines and also won an award.}
+% \end{rSection} 
+
+%----------------------------------------------------------------------------------------
+\begin{rSection}{Outreach \& Service} 
+
+\textbf{Undergraduate Research Advisor} \\ 
+Texas A\&M University \hfill \textit{College Station, TX}
+\begin{itemize}
+    \item Guided an undergraduate research project on nonlinear elasticity for the Modeling and Simulation with PDEs summer school, supporting problem formulation, implementation, and presentation of results. (2024)
+    \item Supervised an undergraduate research project on chemotaxis for the Directed Reading Program, providing one-on-one instruction, feedback, and research direction, culminating in an end of the semester presentation. (2022)
+\end{itemize}
+
+\textbf{Volunteer}
+\begin{itemize}
+    \item Mathematics and Statistics Fair, Texas A\&M University \hfill Jan 2023
+    \item \textbf{GED Prep Instructor}, B/CS Community Education Center, Bryan, TX %2021-2022
+    \hfill 2021-2022
+    \item \textbf{Proctor}, High School Math Contest, Texas A\&M University %2019
+    \hfill Oct 2019
+    % \item \textbf{Missionary}, Church of Jesus Christ of Latter Day Saints, Porto Alegre, Rio Grande do Sul, Brazil \& Twin Falls, ID, USA. % 2013-2015    
+\end{itemize}
+
+\textbf{Eagle Scout} \hfill Apr 2012
+
+\end{rSection}
+
+\begin{rSection}{Leadership}
+
+\textbf{Organizer} \hfill Jul 2023 \\
+Mini-symposium on ``Invariant-Domain Preserving Hydrodynamics: From Euler to Navier-Stokes" \\
+17th U.S. National Congress on Computational Mechanics, Albuquerque, NM, USA
+
+\textbf{Organizer} \hfill Nov 2022 \\
+Mini-symposium on ``High Order Methods for Computational Hydrodynamics" \\
+5th Annual Meeting of the SIAM Texas-Louisiana Section, Houston, TX, USA
+
+\textbf{President, Vice President, Treasurer} \hfill 2019 -- 2024 \\
+Society for Industrial and Applied Mathematics (SIAM) Graduate Student Chapter, Texas A\&M University
+
+    
+\end{rSection}
+
+\begin{rSection}{Languages}
+\textbf{English}\hfill Native Language \\
+\textbf{Portuguese} \hfill Intermediate Listener, Intermediate Speaker, Advanced Reader, Novice Writer
+\end{rSection}
+
+
+\end{document}
