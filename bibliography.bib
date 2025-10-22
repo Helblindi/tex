@@ -612,6 +612,21 @@ eprint = { https://doi.org/10.1137/21M145793X},
 abstract = { We introduce a technique that makes every explicit Runge--Kutta (ERK) time stepping method invariant domain preserving and mass conservative when applied to high-order discretizations of the Cauchy problem associated with systems of nonlinear conservation equations. The key idea is that at each stage of the ERK scheme one computes a low-order update, a high-order update, both defined from the same intermediate stage, and then one applies the nonlinear, mass conservative limiting operator. The main advantage over the strong stability preserving (SSP) paradigm is more flexibility in the choice of the ERK scheme, thus allowing for less stringent restrictions on the time step. The technique is agnostic to the space discretization. It can be combined with continuous finite elements, discontinuous finite elements, and finite volume discretizations in space. Numerical experiments are presented to illustrate the theory. }
 }
 
+@article{favrie_gavrilyuk_saurel_2008,
+title = {Modelling wave dynamics of compressible elastic materials},
+journal = {Journal of Computational Physics},
+volume = {227},
+number = {5},
+pages = {2941-2969},
+year = {2008},
+issn = {0021-9991},
+doi = {https://doi.org/10.1016/j.jcp.2007.11.030},
+url = {https://www.sciencedirect.com/science/article/pii/S0021999107005220},
+author = {S.L. Gavrilyuk and N. Favrie and R. Saurel},
+keywords = {Conservative formulation, Riemann problem, Godunov method},
+abstract = {An Eulerian conservative hyperbolic model of isotropic elastic materials subjected to finite deformation is addressed. It was developed by Godunov [S.K. Godunov, Elements of continuum mechanics, Nauka, Moscow, 1978 (in Russian) and G.H. Miller, P. Colella, A high-order Eulerian Godunov method for elastic–plastic flow in solids, J. Comput. Phys. 167 (2001) 131–176]. Some modifications are made concerning a more suitable form of governing equations. They form a set of evolution equations for a local cobasis which is naturally related to the Almansi deformation tensor. Another novelty is that the equation of state is given in terms of invariants of the Almansi tensor in a form which separates hydrodynamic and shear effects. This model is compared with another hyperbolic non-conservative model which is widely used in engineering sciences. For this model we develop a Riemann solver and determine some reference solutions which are compared with the conservative model. The numerical results for different tests show good agreement of both models for waves of very small and very large amplitude. However, for waves of intermediate amplitude important discrepancies between results are clearly visible.}
+}
+
 @article{favrie_gavrilyuk_saurel_2009,
 title = {Solid–fluid diffuse interface model in cases of extreme deformations},
 journal = {Journal of Computational Physics},
@@ -724,6 +739,18 @@ abstract = {In this paper, we construct a class of second-order cell-centered La
           doi = {10.1016/j.jcp.2012.05.026},
        adsurl = {https://ui.adsabs.harvard.edu/abs/2012JCoPh.231.6360F},
       adsnote = {Provided by the SAO/NASA Astrophysics Data System}
+}
+
+@book{gavrilyuk-book,
+author = {dell'isola, Francesco and Gavrilyuk, Sergey},
+year = {2012},
+month = {01},
+pages = {},
+publisher = {Springer Vienna},
+title = {Variational models and methods in solid and fluid mechanics. Papers based on the presentations at the course, Udine, Italy, July 12–16, 2010},
+volume = {535},
+isbn = {978-3-7091-0982-3},
+doi = {10.1007/978-3-7091-0983-0}
 }
 
 @article{godunov-1959,
@@ -1496,6 +1523,21 @@ year = {2010}
       archivePrefix={arXiv},
       primaryClass={math.NA},
       url={https://arxiv.org/abs/1701.04834}, 
+}
+
+@article{shyue-2004,
+title = {A fluid-mixture type algorithm for barotropic two-fluid flow problems},
+journal = {Journal of Computational Physics},
+volume = {200},
+number = {2},
+pages = {718-748},
+year = {2004},
+issn = {0021-9991},
+doi = {https://doi.org/10.1016/j.jcp.2004.05.003},
+url = {https://www.sciencedirect.com/science/article/pii/S002199910400186X},
+author = {Keh-Ming Shyue},
+keywords = {Barotropic flow, Tait equation of state, Stiffened gas equation of state, Fluid-mixture model, Wave propagation method},
+abstract = {Our goal is to present a simple interface-capturing approach for barotropic two-fluid flow problems in more than one space dimension. We use the compressible Euler equations in isentropic form as a model system with the thermodynamic property of each fluid component characterized by the Tait equation of state. The algorithm uses a non-isentropic form of the Tait equation of state as a basis to the modeling of the numerically induced mixing between two different barotropic fluid components within a grid cell. Similar to our previous work for multicomponent problems, see [J. Comput. Phys. 171 (2001) 678] and references cited therein, we introduce a mixture type of the model system that consists of the full Euler equations for the basic conserved variables and an additional set of evolution equations for the problem-dependent material quantities and also the approximate location of the interfaces. A standard high-resolution method based on a wave-propagation formulation is employed to solve the proposed model system with the dimensional-splitting technique incorporated in the method for multidimensional problems. Several numerical results are presented in one, two, and three space dimensions that show the feasibility of the method as applied to a reasonable class of practical problems without introducing any spurious oscillations in the pressure near the smeared material interfaces.}
 }
 
 @book{szabo,

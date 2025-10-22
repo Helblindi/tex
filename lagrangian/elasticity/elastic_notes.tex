@@ -112,7 +112,7 @@ The right Cauchy-Green deformation tensor is defined as
 \end{equation}
 The reduced right Cauchy-Green deformation tensor is defined as
 \begin{equation}
-   \obc := \frac{\bC}{\left|\bC\right|^{1/3}}
+   \bc := \frac{\bC}{\left|\bC\right|^{1/3}}
 \end{equation}
 
 \subsection{Hyperelasticity}
@@ -136,7 +136,7 @@ In \cite[Sec.~4.1]{chaimoon2019} for the Uniaxial tension tests on coronary arte
 They define the strain energy function in Eq.~(39) as
 \begin{multline}
    \label{eqn:chaimoon-strain}
-   \bsigma = \left(1-2w_1^1\right) \left[\frac{A_1}{2}\left(I_1-3\right) + \frac{B_1}{2}\left(\frac{I_2}{I_3}-3\right)\right] \\
+   e^s = \left(1-2w_1^1\right) \left[\frac{A_1}{2}\left(I_1-3\right) + \frac{B_1}{2}\left(\frac{I_2}{I_3}-3\right)\right] \\
    + 2w_1^1D_1 \left[\frac{1}{A_1}\left(e^{A_1\left(J_{4i}-1\right)}-1\right) + \frac{1}{B_1}\left(e^{B_1\left(K_{5i}^{\text{inc}}-1\right)} -1\right)\right]
 \end{multline}
 where
@@ -147,8 +147,8 @@ where
 \end{align*}
 
 \begin{remark}
-   Notice that in \cite{chaimoon2019} they work in the Cauchy-Green Strain tensor $\bC$, not the reduced tensor $\obc$.
-   This will mean slight modifications to our representation.
+   Notice that in \cite{chaimoon2019} they work in the Cauchy-Green Strain tensor $\bC$, not the reduced tensor $\bc$.
+   To work with the reduced invariants there is no issue since in Chaimoon (2019) the work is done under the assumption of incompressiblity ($\det\left|\bC\right| = 1$).
 \end{remark}
 
 \begin{remark}
@@ -159,9 +159,9 @@ where
 \subsection{Reduced Invariant Implementation}
 We adopt the following reduced invariants
 \begin{align*}
-   j_1 &= \Tr\left[\obc\right] & j_{4i} &= \Tr\left[\obc\bG_i\right] \\
-   j_2 &= \Tr\left[\obc^2\right] & j_{5i} &= \Tr\left[\obc^2\bG_i\right] \\
-   j_3 &= \det\left[\obc\right] = 1 & k_{5i} &= j_{5i} - j_1j_{4i} + j_2\Tr\left[\bG_i\right].   
+   j_1 &= \Tr\left[\bc\right] & j_{4i} &= \Tr\left[\bc\bG_i\right] \\
+   j_2 &= \Tr\left[\bc^2\right] & j_{5i} &= \Tr\left[\bc^2\bG_i\right] \\
+   j_3 &= \det\left[\bc\right] = 1 & k_{5i} &= j_{5i} - j_1j_{4i} + j_2\Tr\left[\bG_i\right].   
 \end{align*}
 Then we have the following relationships between the invariants:
 \begin{align*}
@@ -172,9 +172,109 @@ Then we have the following relationships between the invariants:
 Then the strain energy function \eqref{eqn:chaimoon-strain} becomes 
 \begin{multline}
 \label{eqn:aortic-eos}
-    e^s=\left(1-2 w^1_1 \right)\left[\frac{A_1}{2}\left(\left|\bC\right|^{1/3}j_1-3\right)+\frac{B_1}{2}\left(\frac{1}{2\left|\bC\right|^{1/3}}\left(j_1^2-j_2\right)-3\right)\right]\\
-    +2w^1_1D_1\left[\frac{1}{A_1}\left(\exp\left\{A_1\left(\left|\bC\right|^{1/3}j_{4i}-1\right)\right\}-1\right)+\frac{1}{B_1}\left(\exp\left\{\left(B_1\left(\left|\bC\right|^{2/3} \left(j_{5i}-j_1j_{4}+\frac{j_1^2-j_2}{2}\right)-1\right)\right)\right\}-1\right)\right]
+% including factor |C|^(1/3) -- This is not needed since assumption from Chaimoon (2019) is incompressibility ==> |C| = 1
+   %  e^s=\left(1-2 w^1_1 \right)\left[\frac{A_1}{2}\left(\left|\bC\right|^{1/3}j_1-3\right)+\frac{B_1}{2}\left(\frac{1}{2\left|\bC\right|^{1/3}}\left(j_1^2-j_2\right)-3\right)\right]\\
+   %  +2w^1_1D_1\left[\frac{1}{A_1}\left(\exp\left\{A_1\left(\left|\bC\right|^{1/3}j_{4i}-1\right)\right\}-1\right)+\frac{1}{B_1}\left(\exp\left\{\left(B_1\left(\left|\bC\right|^{2/3} \left(j_{5i}-j_1j_{4i}+\frac{j_1^2-j_2}{2}\right)-1\right)\right)\right\}-1\right)\right]
+   e^s=\left(1-2 w^1_1 \right)\left[\frac{A_1}{2}\left(j_1-3\right)+\frac{B_1}{2}\left(j_1^2-j_2-6\right)\right]\\
+    +2w^1_1D_1\left[\frac{1}{A_1}\left(\exp\left\{A_1\left(j_{4i}-1\right)\right\}-1\right)+\frac{1}{B_1}\left(\exp\left\{\left(B_1 \left(j_{5i}-j_1j_{4i}+\frac{j_1^2-j_2}{2}\right)-1\right)\right\}-1\right)\right]
 \end{multline}
+To compute the stress, we need the partial derivatives of the strain energy function with respect to the invariants:
+\small
+\begin{subequations}
+\begin{align}
+   % Derivations including factor |C|^(1/3) -- This is not needed since assumption from Chaimoon (2019) is incompressibility ==> |C| = 1
+   % %
+   % \frac{\partial e^s}{\partial j_1} &= \left(1-2w_1^1\right)\left[\frac{A_1}{2}\left|\bC\right|^{1/3} + \frac{B_1}{2}\frac{j_1}{\left|\bC\right|^{1/ 3}}\right] \\           
+   % &\qquad + 2w_1^1D_1\left|\bC\right|^{2/3}\left(-j_{4i} + j_1\right)\exp\left\{B_1\left(\left|\bC\right|^{2/3}\left(j_{5i}-j_1j_{4i}+\frac{j_1^2-j_2}{2}\right)-1\right)\right\} \\
+   % %
+   % \frac{\partial e^s}{\partial j_2} &= -\left(1-2w_1^1\right)\frac{B_1}{4\left|\bC\right|^{1/3}} - w_1^1D_1\left|\bC\right|^{2/3}\exp\left\{B_1\left(\left|\bC\right|^{2/3}\left(j_{5i}-j_1j_{4i}+\frac{j_1^2-j_2}{2}\right)-1\right)\right\} \\
+   % %
+   % \frac{\partial e^s}{\partial j_{4i}} &= 2w_1^1D_1\left[\left|\bC\right|^{1/3}\exp\left\{A_1\left(\left|\bC\right|^{1/3}j_{4i}-1\right)\right\} \right. \notag \\
+   % &\qquad \left. - \left|\bC\right|^{2/3}j_1 \exp\left\{B_1\left(\left|\bC\right|^{2/3} \left(j_{5i}-j_1j_{4i}+\frac{j_1^2-j_2}{2}\right)-1\right)\right\} \right]\\
+   % %
+   % \frac{\partial e^s}{\partial j_{5i}} &= 2w_1^1D_1\left|\bC\right|^{2/3}\exp\left\{B_1\left(\left|\bC\right|^{2/3}\left(j_{5i}-j_1j_{4i}+\frac{j_1^2-j_2}{2}\right)-1\right)\right\}
+   %
+   \frac{\partial e^s}{\partial j_1} &= \left(1-2w_1^1\right)\left[\frac{A_1}{2} + \frac{B_1}{2}j_1\right] + 2w_1^1D_1\left(-j_{4i} + j_1\right)\exp\left\{B_1\left(j_{5i}-j_1j_{4i}+\frac{j_1^2-j_2}{2}\right)-1\right\} \\
+   %
+   \frac{\partial e^s}{\partial j_2} &= -\left(1-2w_1^1\right)\frac{B_1}{4} - w_1^1D_1\exp\left\{B_1\left(j_{5i}-j_1j_{4i}+\frac{j_1^2-j_2}{2}\right)-1\right\} \\
+   %
+   \frac{\partial e^s}{\partial j_{4i}} &= 2w_1^1D_1\left[\exp\left\{A_1\left(j_{4i}-1\right)\right\} - j_1 \exp\left\{B_1\left(j_{5i}-j_1j_{4i}+\frac{j_1^2-j_2}{2}\right)-1\right\} \right]\\
+   %
+   \frac{\partial e^s}{\partial j_{5i}} &= 2w_1^1D_1\exp\left\{B_1\left(j_{5i}-j_1j_{4i}+\frac{j_1^2-j_2}{2}\right)-1\right\}
+\end{align}
+\end{subequations}
+\normalsize
+We must also compute the partial derivatives of the invariants with respect to $\bC$:
+\begin{align*}
+    \frac{\partial j_1}{\partial \bC} &= \frac{\partial}{\partial \bC} \left(\Tr\left(\bc\right)\right) \\
+    &= \frac{\partial}{\partial \bC} \left[\left|\bC\right|^{-1/3} \Tr\left(\bC\right)\right] \\
+    &= \left|\bC\right|^{-1/3} \polI_d -\frac{1}{3} \left|\bC\right|^{-4/3} \Tr\left(\bC\right) \operatorname{adj}\left(\bC^T\right) \\ 
+    &= \left|\bC\right|^{-1/3} \polI_d -\frac{1}{3} \left|\bC\right|^{-1/3} \Tr\left(\bC\right) \bC^{-1} \\ 
+    &= \left|\bC\right|^{-1/3} \polI_d -\frac{1}{3} j_1 \bC^{-1} \\
+    %j2
+    \frac{\partial j_2}{\partial \bC} &= \frac{\partial}{\partial \bC} \left(\Tr\left(\bc^2\right)\right)\\
+    &= \frac{\partial}{\partial \bC} \left[\left|\bC\right|^{-2/3} \Tr\left(\bC^2\right)\right] \\
+    &= 2\left|\bC\right|^{-2/3} \bC -\frac{2}{3} \left|\bC\right|^{-5/3} \Tr\left(\bC^2\right) \operatorname{adj}\left(\bC^T\right)  \\
+    &= 2\left|\bC\right|^{-2/3} \bC -\frac{2}{3} \left|\bC\right|^{-2/3} \Tr\left(\bC^2\right) \bC^{-1} \\
+    &= 2\left|\bC\right|^{-2/3} \bC -\frac{2}{3} j_2 \bC^{-1} \\
+    %j4i
+    \frac{\partial j_{4i}}{\partial \bC} &= \frac{\partial}{\partial \bC} \left(\Tr\left(\bc\bG_i\right)\right)\\
+    &= \frac{\partial}{\partial \bC} \left[ \left|\bC\right|^{-1/3} \Tr\left(\bC\bG_i\right)\right] \\
+    &= \left|\bC\right|^{-1/3} \bG_i\tr - \frac{1}{3} \left|\bC\right|^{-4/3} \Tr\left(\bC\bG_i\right) \operatorname{adj}\left(\bC^T\right) \\
+    &= \left|\bC\right|^{-1/3} \bG_i\tr - \frac{1}{3} j_{4i} \bC^{-1} \\
+    % j5i
+    \frac{\partial j_{5i}}{\partial \bC} &= \frac{\partial}{\partial \bC} \left(\Tr\left(\bc^2\bG_i\right)\right)\\
+    &= \frac{\partial}{\partial \bC} \left[ \left|\bC\right|^{-2/3} \Tr\left(\bC^2\bG_i\right)\right] \\
+    &= \left|\bC\right|^{-2/3} \left(\bG_i\tr\bC\tr + \bC\tr \bG_i\tr\right) -\frac{2}{3} \left|\bC\right|^{-5/3} \Tr\left(\bC^2\bG_i\right) \operatorname{adj}\left(\bC^T\right) \\
+    &= \left|\bC\right|^{-2/3} \left(\bG_i\tr\bC\tr + \bC\tr \bG_i\tr\right) -\frac{2}{3} \left|\bC\right|^{-2/3} \Tr\left(\bC^2\bG_i\right) \bC^{-1} \\
+    &= \left|\bC\right|^{-2/3} \left(\bG_i\tr\bC\tr + \bC\tr \bG_i\tr\right) -\frac{2}{3} j_{5i} \bC^{-1} \\
+    &= 2\left|\bC\right|^{-2/3} \bC\bG_i -\frac{2}{3} j_{5i} \bC^{-1}
+\end{align*}
+where particularly for the derivation of $\frac{\partial j_{5i}}{\partial \bC}$ we have used the fact that 
+\begin{equation*}
+\frac{\partial}{\partial \bC} \Tr\left(\bC^2 \bG_i\right) = \bG_i\tr\bC\tr + \bC\tr\bG_i\tr
+\end{equation*} 
+and since $\bC$ and $\bG_i$ are both symmetric.
+In particular, this implies for the Cauchy stress tensor that
+\begin{subequations}
+\begin{align}
+   %%% Murnaghan
+   %  % j1
+   %  \frac{\partial j_1}{\partial \bC} \bC &= \bc -\frac{1}{3} j_1 \polI \\
+   %  %j2
+   %  \frac{\partial j_2}{\partial \bC} \bC &= 2\bc^2 -\frac{2}{3} j_2 \polI \\
+   %  %j4i
+   %  \frac{\partial j_{4i}}{\partial \bC} \bC &= \bc \bG_i - \frac{1}{3} j_{4i} \polI \\
+   %  % j5i
+   %  \frac{\partial j_{5i}}{\partial \bC} \bC &= 2\bc^2\bG_i -\frac{2}{3} j_{5i} \polI \\
+   %%% Cauchy
+   % j1
+   \polJ \frac{\partial j_1}{\partial \bC} \polJ\tr &= \bb -\frac{1}{3} j_1 \polI \\
+   %j2
+   \polJ \frac{\partial j_2}{\partial \bC} \polJ\tr &= 2\bb^2 -\frac{2}{3} j_2 \polI \\
+   %j4i
+   \polJ \frac{\partial j_{4i}}{\partial \bC} \polJ\tr &= \bb \bG_i - \frac{1}{3} j_{4i} \polI \\
+   % j5i
+   \polJ \frac{\partial j_{5i}}{\partial \bC} \polJ\tr &= 2\bb^2\bG_i -\frac{2}{3} j_{5i} \polI
+\end{align}
+\end{subequations}
+
+With the definition of the strain energy and the above partial derivatives, our stress tensor then takes the form
+% \begin{align*}
+%    \begin{multline*}
+%       \bsigma &= 2\rho\left(\frac{\partial e^s}{\partial \Tr(\bc)}\left(\bb-\frac{1}{3}\Tr(\bb) \bI\right)+2\frac{\partial e^s}{\partial\Tr(\bc^2)}\left(\bb^2-\frac{1}{3}\Tr(\bc^2)\bI \right) \right) 
+%      \\ &+2\rho\left(\frac{\partial e^s}{\partial j_{4i}}\left(\frac{\bF\mathbf{G}_i\bF^T}{|\bC|^{1/3}}-\frac{1}{3}\Tr(\bc \mathbf{G})\bI \right)+2\left(\frac{\partial e^s}{\partial j_{5i}}\left(\frac{\bF\bC\mathbf{G}_i\bF^T}{|\bC|^{2/3}}-\frac{1}{3}\Tr(\bc^2 \mathbf{G})\bI \right)\right)\right)\\
+%     -\rho^2\frac{\partial e^h}{\partial \rho}\bI
+%    \end{multline*}
+% \end{align*}
+\begin{align*}
+\bsigma &= 2\rho \frac{\partial e^s}{\partial \bC} \bC -\rho^2 \frac{\partial e^h}{\partial \rho} \polI \\
+%
+  &= 2\rho \left[ \frac{\partial e^s}{\partial j_1} \frac{\partial j_1}{\partial \bC} \bC + \frac{\partial e^s}{\partial j_2} \frac{\partial j_2}{\partial \bC} \bC \right] -\rho^2 \frac{\partial e^h}{\partial \rho} \polI + 2\rho \left[ \frac{\partial e^s}{\partial j_{4i}} \frac{\partial j_{4i}}{\partial \bC} \bC + \frac{\partial e^s}{\partial j_{5i}} \frac{\partial j_{5i}}{\partial \bC} \bC \right] \\
+%
+  &= 2\rho\left[\frac{\partial e^s}{\partial j_1}\left(\bc-\frac{1}{3}j_1 \polI\right)+2\frac{\partial e^s}{\partial j_2}\left(\bc^2-\frac{1}{3}j_2\polI \right) \right]-\rho^2\frac{\partial e^h}{\partial \rho}\polI \notag \\
+  &\qquad + 2\rho\left[ \frac{\partial e^s}{\partial j_{4i}} \left(\bc \bG_i - \frac{1}{3} j_{4i} \polI\right) + 2\frac{\partial e^s}{\partial j_{5i}} \left(\bc^2\bG_i -\frac{1}{3} j_{5i} \polI\right) \right]
+\end{align*}
 
 \newpage
 
