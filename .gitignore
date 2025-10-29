@@ -10,3 +10,6 @@ tex.code-workspace
 *.log
 *.out
 *.fdb_latexmk
+
+# Thesis misc files
+thesis/
