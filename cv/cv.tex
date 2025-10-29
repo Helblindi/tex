@@ -1,0 +1,311 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% "ModernCV" CV and Cover Letter
+% LaTeX Template
+% Version 1.11 (19/6/14)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% Original author:
+% Xavier Danaux (xdanaux@gmail.com)
+%
+% License:
+% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
+%
+% Important note:
+% This template requires the moderncv.cls and .sty files to be in the same 
+% directory as this .tex file. These files provide the resume style and themes 
+% used for structuring the document.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[11pt,a4paper,sans]{moderncv} % Font sizes: 10, 11, or 12; paper sizes: a4paper, letterpaper, a5paper, legalpaper, executivepaper or landscape; font families: sans or roman
+
+\moderncvstyle{classic} % CV theme - options include: 'casual' (default), 'classic', 'oldstyle' and 'banking'
+\moderncvcolor{red} % CV color - options include: 'blue' (default), 'orange', 'green', 'red', 'purple', 'grey' and 'black'
+
+\usepackage{lipsum} % Used for inserting dummy 'Lorem ipsum' text into the template
+
+\usepackage[scale=0.75]{geometry} % Reduce document margins
+%\setlength{\hintscolumnwidth}{3cm} % Uncomment to change the width of the dates column
+%\setlength{\makecvtitlenamewidth}{10cm} % For the 'classic' style, uncomment to adjust the width of the space allocated to your name
+
+\usepackage{enumitem} % For itemize, and item separation
+
+%----------------------------------------------------------------------------------------
+%	NAME AND CONTACT INFORMATION SECTION
+%----------------------------------------------------------------------------------------
+
+\firstname{Madison} % Your first name
+\familyname{Sheridan} % Your last name
+
+% All information in this block is optional, comment out any lines you don't need
+\title{Curriculum Vitae}
+\mobile{(916) 790-7806}
+\email{madison.sheridan94@gmail.com}
+\homepage{helblindi.github.io}{helblindi.github.io}
+%\homepage{https://www.linkedin.com/pub/daniele-perrotta/64/5b9/794} {staff.org.edu/$\sim$jsmith} % The first argument is the url for the clickable link, the second argument is the url displayed in the template - this allows special characters to be displayed such as the tilde in this example
+%\extrainfo{additional information}
+% \photo[90pt][0.7pt]{pictures/photo1.png} % The first bracket is the picture height, the second is the thickness of the frame around the picture (0pt for no frame)
+%\quote{"A witty and playful quotation" - John Smith}
+
+%----------------------------------------------------------------------------------------
+\newcommand{\Csharp}{%
+  {\settoheight{\dimen0}{C}C\kern-.05em \resizebox{!}{\dimen0}{\raisebox{\depth}{\textbf{\#}}}}}
+\begin{document}
+
+\makecvtitle % Print the CV title
+
+%----------------------------------------------------------------------------------------
+%	RESEARCH INTERESTS
+%----------------------------------------------------------------------------------------
+\section{Research Interests}
+\cventry{}{\normalfont Numerical methods for PDEs, Hyperbolic systems of conservation laws, Computational fluid dynamics, Compressible Euler equations, Lagrangian hydrodynamics}{}{}{}{}
+
+%----------------------------------------------------------------------------------------
+%	EDUCATION SECTION
+%----------------------------------------------------------------------------------------
+
+\section{Education}
+\cventry{2019--2025}{PhD, Mathematics}{Texas A\&M University}{College Station, TX}{}{\textbf{Thesis:} A Robust Lagrangian Framework for Compressible Flow \& Hyperelasticity \\%GPA
+}{%\textbf{Thesis Title:} Unsupervised Interaction Detection in Videos Sequences\\
+
+%{Status:} In the writing phase}  % Arguments not required can be left empty
+}
+
+\cventry{2015--2019}{Bachelor of Science, Mathematics (Computer Science minor)}{Brigham Young University -- Idaho}{Rexburg, ID}{}{%GPA: 
+} 
+
+%\section{Masters Thesis}
+
+%\cvitem{Title}{\emph{Technologies and characterization of ferroelectric polymers for biomedical sensors}}
+%\cvitem{Supervisors}{Professor Antonino Fiorillo}
+%\cvitem{Description}{This thesis is based on the implementation of a temperature sensor.}
+
+%----------------------------------------------------------------------------------------
+%	EXPERIENCE SECTION
+%----------------------------------------------------------------------------------------
+
+\section{Experience}
+ 
+\cventry{2019--2025}{Graduate Teaching/Research Assistant}{Texas A\&M University}{}{College Station, TX}{
+\textbf{Advisor: Jean-Luc Guermond}
+\normalfont
+\begin{itemize}
+    % \itemsep -3pt {} 
+    \item Developed a finite element method for the equations of Lagrangian hydrodynamics that achieves high-order accuracy while preserving essential physical invariants, ensuring robustness in challenging flow regimes.
+    % \item Implemented novel techniques in C++ within MFEM, validated through convergence studies, benchmark problems, and HPC runs on the Whistler cluster.
+    \item Collaborated across mathematics, physics, and engineering teams; presented findings at SIAM CSE, USNCCM, and other national conferences.
+    \item Served as Instructor of Record for Math 140, independently leading classroom instruction, developing assignments and exams, and evaluating student performance.
+ \end{itemize}
+% Entry to show diversity of experience, can remove if applying to strictly math positions
+% \textbf{Co-Advisor: Jim Morel}
+% \normalfont
+% \begin{itemize}
+%     \item Variable Eddington Factor (VEF) method for the 1-D grey radiative transfer equations
+% \end{itemize}
+} 
+% \cventry{2024}{Instructor of Record}{Texas A\&M University}{College Station, TX}{}{
+% \begin{itemize}
+%     \item Mathematics for Business and Social Sciences
+% \end{itemize}
+% }
+\cventry{2022--2023}{Graduate Student Intern}{Lawrence Livermore National Laboratory}{Livermore, CA}{}{ 
+\textbf{Mentor: Vladimir Tomov} 
+\normalfont
+\begin{itemize}
+    \item Augmented high-order Lagrangian hydrodynamics codes in C++/MFEM with an invariant-domain preserving Lagrangian finite element method, ensuring physics-consistent robustness validated with benchmark tests.
+    \item Modified an MFEM discontinuous Galerkin advection solver for use with continuous finite element discretizations, extending code capabilities and supporting broader benchmarking.
+\end{itemize}
+} 
+
+\cventry{2019--2022}{Graduate Student Intern}{Nevada National Security Site}{North Las Vegas, NV}{}{ 
+\textbf{Mentors: Cleat Zeiler, Marylesa Howard, Daniel Champion, Jesse Adams} 
+\normalfont
+\begin{itemize}
+    % \itemsep -3pt {} 
+     \item Developed and trained deep learning models in Python/TensorFlow to reconstruct clipped seismic waveforms, improving signal fidelity and enabling more accurate seismic event detection.
+    \item Designed a Python-based multilateration algorithm using geophone array data to geolocate seismic signal sources with improved accuracy, supporting rapid deployment for field missions.
+ \end{itemize}
+} 
+
+\section{Publications}
+\cvitem{2025}{Guermond, J.-L., Popov, B., Saavedra, L., Sheridan, M., \textit{"Invariant-domain-preserving and locally mass conservative approximation of the Lagrangian hydrodynamics equations,"} Computer Methods in Applied Mechanics and Engineering}
+% \cvitem{2021}{Zeiler, C., McLin, K., Champion, D., Scalise, Michelle., Sheridan, M., White, R., Jensen, R., Smith, K., Plank, G., \textit{“The Monte Cristo Range Mw 6.5 Nodal Geophone Rapid Deployment”}}
+
+\section{Talks}
+% 2025
+\cvitem{2025}{\textit{A Robust Lagrangian Framework for Compressible Flow \& Hyperelasticity}, Dissertation Defense, Texas A\&M University, College Station, TX, USA. October 2025.}
+\cvitem{2025}{\textit{A Robust Lagrangian Framework for Compressible Flow \& Hyperelasticity}, Mathematics Graduate Student Organization Seminar, Texas A\&M University, College Station, TX, USA. September 2025.}
+\cvitem{2025}{\textit{Invariant-Domain-Preserving Approximation of the Lagrangian Hydrodynamics Equations}, LANL Center for Nonlinear Studies Seminar Series, Los Alamos, NM, USA. September 2025.}
+% 2024
+\cvitem{2024}{\textit{Invariant-Domain-Preserving and Exactly Conservative Approximation of the Lagrangian Hydrodynamics Equations}, 7th Annual Meeting of the SIAM Texas-Louisiana Section, Baylor University, Waco, TX, USA. October 2024.}
+\cvitem{2024}{\textit{Invariant-Domain-Preserving and Exactly Conservative Approximation of the Lagrangian Hydrodynamics Equations}, Second annual RTG NASC Annual Workshop, Rice University, Houston, TX, USA. October 2024.}
+\cvitem{2023}{\textit{Invariant-Domain-Preserving and Exactly Conservative Approximation of the Lagrangian Hydrodynamics Equations}, 6th Annual Meeting of the SIAM Texas-Louisiana Section, University of Louisiana at Lafayette, Lafayette, LA, USA. November 2023.}
+
+\cvitem{2023}{\textit{A Brief Introduction to Finite Element Methods}, Applied Mathematics Undergraduate SEminar (AMUSE), Texas A\&M University, College Station, TX, USA. October 2023.}
+
+\cvitem{2023}{\textit{Invariant-Domain-Preserving and Exactly Conservative Approximation of the Lagrangian Hydrodynamics Equations}, Intern Final Presentations, Livermore, CA, USA. August 2023.}
+
+\cvitem{2023}{\textit{Invariant-Domain-Preserving and Exactly Conservative Approximation of the Lagrangian Hydrodynamics Equations}, 17th U. S. National Congress on Computational Mechanics, Albuquerque, NM, USA. July 2023.}
+
+\cvitem{2023}{\textit{Invariant-Domain-Preserving and Exactly Conservative Approximation of the Lagrangian Hydrodynamics Equations}, Finite Element Rodeo, Texas A\&M University, College Station, TX, USA. March 2023.}
+
+\cvitem{2023}{\textit{Invariant-Domain-Preserving and Exactly Conservative Approximation of the Lagrangian Hydrodynamics Equations}, SIAM Conference on Computational Science and Engineering (CSE23), Amsterdam, The Netherlands. February 2023.}
+
+\cvitem{2022}{\textit{Invariant Domains and a First-Order Continuous Finite Element Approximation}, Intern Final Presentations, Livermore, CA, USA. August 2022.}
+
+\cvitem{2021}{\textit{Invariant Domain Preserving IMEX Methods}, SIAM TX-LA Meeting, University of Texas Rio Grande Valley, South Padre Island, TX, USA. November 2021.}
+
+\section{Posters}
+\cvitem{2025}{\textit{Invariant-Domain-Preserving and Exactly Conservative Approximation of the Lagrangian Hydrodynamics Equations}, Hypersonics Workshop, College Station, TX, USA. August 2025.}
+\cvitem{2023}{\textit{Invariant-Domain-Preserving and Exactly Conservative Approximation of the Lagrangian Hydrodynamics Equations}, Intern Poster Presentations, Livermore, CA, USA. August 2023.}
+\cvitem{2023}{\textit{Invariant-Domain-Preserving and Exactly Conservative Approximation of the Lagrangian Hydrodynamics Equations}, 7th KUMUNU-ISU Conference in PDE, Dynamical Systems and Applications, Iowa State University, Aimes, IA, USA. April 2023.}
+\cvitem{2019}{\textit{Seismic Clipped Waveform Reconstruction and Noise Attenuation Using Deep Learning}, 
+American Geophysical Union Fall Meeting, San Francisco, CA, USA. December 2019.}
+
+\section{Leadership}
+\cventry{2023}{Organizer}{Mini-symposium on "Invariant-Domain Preserving Hydrodynamics: From Euler to Navier-Stokes"}{17th U. S. National Congress on Computational Mechanics, July 2023}{}{}
+
+\cventry{2022}{Organizer}{Mini-symposium on "High Order Methods for Computational Hydrodynamics"}{5th Annual Meeting of the SIAM Texas-Louisiana Section (TXLA22), November 2022}{}{}
+
+\cventry{2019--2024}{President, Vice President, Treasurer}{Society for Industrial and Applied Math Graduate Student Chapter,
+Texas A\&M University}{}{}{}
+
+\section{Software development}
+\cventry{2021--Present}{MFEM}{LLNL}{Scalable C++ library for finite element methods}{}{}
+
+\section{Outreach/Mentorship}
+\cvitem{2024}{\textbf{Mentor}, Advised an undergraduate research project on nonlinear elasticity for the Modeling and Simulation with PDEs summer school, Texas A\&M University}
+\cvitem{2023}{\textbf{Volunteer}, Mathematics and Statistics Fair, Texas A\&M University}
+\cvitem{2022}{\textbf{Mentor}, Advised an undergraduate research project studying chemotaxis for the Directed Reading Program, Texas A\&M University}
+
+\cvitem{2021--2022}{\textbf{GED Prep Instructor}, B/CS Community Education Center, Bryan, TX}
+
+\cvitem{2019}{\textbf{Proctor}, High School Math Contest, Texas A\&M University}
+
+% \cvitem{2013 -- 2015}{\textbf{Missionary}, Church of Jesus Christ of Latter Day Saints, Porto Alegre, Rio Grande do Sul, Brazil \& Twin Falls, ID, USA.}
+
+\cvitem{2011}{\textbf{Eagle Scout}, El Dorado Hills, CA.}
+
+\section{Membership}
+\cvitem{}{American Mathematical Society (AMS)}
+\cvitem{}{Society for Industrial and Applied Mathematics (SIAM)}
+
+% \section{Skills and Activities}
+% \cvitem{Programming Language}{{MATLAB,C++, Java, \Csharp, VB.net, MySQL}}
+% \cvitem{Web }{{ASP, HTML, XML, WebServices (SOAP)}}
+% \cvitem{IDE }{{VisualStudio.net, Qt Creator (Basic)}}
+% \cvitem{Environment }{{OpenCV, Latex}, Microsoft Office}
+% \cvitem{Operating System }{Windows, Linux}
+
+
+%----------------------------------------------------------------------------------------
+%	AWARDS SECTION
+%----------------------------------------------------------------------------------------
+\section{Computer Languages}
+\cvitem{}{Proficient in: C++, Python, LaTeX, Git, Lisp, Mathematica}
+\cvitem{}{Knowledgeable in: Java, JavaScript, Fortran2003, Matlab}
+
+\section{Languages}
+\cvitem{English}{{Native Language}}
+\cvitem{Portuguese}{Intermediate Listener, Intermediate Speaker, Advanced Reader, Novice Writer}
+
+%\cvitemwithcomment{Arabic}{Native Speaker}{}
+%\cvitemwithcomment{English}{\textsc{English (TOEFL)(Bachelor, Master, and PhD in English, Master and PhD dissertations
+%written in English, numerous publications and presentations in English, teaching in the
+%international Master Program and Bachelor Program in English)}
+%}{}
+%\cvitemwithcomment{German}{Professional working proficiency}{}
+
+
+%----------------------------------------------------------------------------------------
+%	COMPUTER SKILLS SECTION
+%----------------------------------------------------------------------------------------
+\iffalse
+\section{Competenze Informatiche}
+
+\cvitem{Linguaggi program}{\textsc{Java, Android, MySQL, MATLAB}}
+\cvitem{Web }{\textsc{CMS, HTML, XML, XSL, XSLT, XPATH, JAVASCRIPT}, Subversion, Apache, Tomcat, WebServices (SOAP)}
+\cvitem{IDE }{\textsc{Eclipse, NetBeans, Android Studio, VisualStudio}}
+
+
+\cvitem{Tecnologie }{\textsc{MVC}, \textsc{J2EE}, \textsc{Hibernate}, Spring Framework, JSF, Primefaces, Liferay}
+\cvitem{Database }{PostgreSQL, Oracle, DB2}
+\cvitem{Sistemi Operativi }{Windows, Unix, Macintosh}
+
+\section{Competenze Tecniche}
+
+\cvitem{Software }{\textsc{MATLAB, SPM, Cadence PSPICE, LabView}}
+
+\section{Progetti IT}
+
+\renewcommand{\listitemsymbol}{-~} % Changes the symbol used for lists
+
+\cvlistitem{Sviluppo di un Sistema per la gestione di Ticketing}
+\cvlistitem{Manutenzione  Evolutiva del Portale  ARPACAL (Agenzia  Regionale per  la Protezione dell'Ambiente della Calabria)}
+\cvlistitem{Sviluppo di un sistema per la gestione delle Tasse di Concessione Regionale (TCR)}
+\cvlistitem{Sviluppo di un Sistema per la gestione dei Verbali}
+\cvlistitem{Manutenzione Evolutiva del Portale dei Tributi della Regione Calabria}
+\cvlistitem{Sviluppo di un Sistema per la gestione delle Minute e delle Pratiche di Equitalia    attraverso l'interazione tramite Web Service}
+
+%----------------------------------------------------------------------------------------
+%	COMMUNICATION SKILLS SECTION
+%----------------------------------------------------------------------------------------
+
+%\section{Communication Skills}
+
+%\cvitem{2010}{Oral Presentation at the California Business Conference}
+%\cvitem{2009}{Poster at the Annual Business Conference in Oregon}
+
+%----------------------------------------------------------------------------------------
+%	LANGUAGES SECTION
+%----------------------------------------------------------------------------------------
+
+\section{Lingue}
+
+\cvitemwithcomment{Italiano}{Madrelingua}{}
+\cvitemwithcomment{Inglese}{Livello Intermedio}{}
+%\cvitemwithcomment{Dutch}{Basic}{Basic words and phrases only}
+
+%----------------------------------------------------------------------------------------
+%	INTERESTS SECTION
+%----------------------------------------------------------------------------------------
+
+\section{Interessi}
+
+\renewcommand{\listitemsymbol}{-~} % Changes the symbol used for lists
+
+\cvlistdoubleitem{Piano}{}
+\cvlistitem{Atletica}
+\fi
+%----------------------------------------------------------------------------------------
+%	COVER LETTER
+%----------------------------------------------------------------------------------------
+
+% To remove the cover letter, comment out this entire block
+
+%\clearpage
+
+%\recipient{HR Department}{Corporation\\123 Pleasant Lane\\12345 City, State} % Letter recipient
+%\date{\today} % Letter date
+%\opening{Dear Sir or Madam,} % Opening greeting
+%\closing{Sincerely yours,} % Closing phrase
+%\enclosure[Attached]{curriculum vit\ae{}} % List of enclosed documents
+
+%\makelettertitle % Print letter title
+
+%\lipsum[1-3] % Dummy text
+
+%\makeletterclosing % Print letter signature
+
+%----------------------------------------------------------------------------------------
+
+\end{document}
+
+
+
