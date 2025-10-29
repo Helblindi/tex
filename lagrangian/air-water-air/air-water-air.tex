@@ -1,0 +1,156 @@
+\documentclass{article}
+
+\usepackage{amsmath, amsthm, amssymb, amsfonts}
+\usepackage{graphicx}
+%It is best practice to keep all your pictures in
+%one folder inside the main directory in which your
+%TeX file is kept. Here the folder is named "images."
+%Replace the name here with your folder's name, if needed.
+%The period is needed due to relative referencing.
+\graphicspath{ {./images/} }
+%If you have JPEG format images, add .jpg as an
+%allowed file extension below. Same for Bitmaps (.bmp).
+\DeclareGraphicsExtensions{.png}
+\usepackage{setspace}
+\usepackage{geometry}
+\usepackage{float}
+\usepackage[hidelinks]{hyperref}
+\usepackage[utf8]{inputenc}
+\usepackage[english]{babel}
+\usepackage{framed}
+\usepackage[dvipsnames]{xcolor}
+\usepackage{tcolorbox}
+
+\usepackage{color}
+\usepackage{bbm}
+\usepackage{dsfont}
+\usepackage{xspace}
+
+
+% For natbib-style references, uncomment this.
+\usepackage[numbers]{natbib}
+% \let\cite=\citet
+% Use \citet for textual citations Author [#]
+% Use \cite for normal citations
+% Use \citep for optional pre/post notes
+% Ex: \citep[see][p.~5]{Smith2020} gives (see Smith, [#], p. 5).
+
+\usepackage{array}
+\usepackage{enumerate}
+\usepackage{enumitem}
+\usepackage{ulem}
+% \let\cite=\citet
+\usepackage{adjustbox}
+\usepackage{caption}
+\usepackage{subcaption}
+\usepackage{siunitx}
+\usepackage{algorithm}
+\usepackage{algpseudocode}
+
+% Custom definitions
+\makeatletter
+%EDIT the path to the .sty files as needed
+\def\input@path{{../../}} % Adjust relative to the current file
+\makeatother
+\usepackage{mydef}
+\usepackage{xthm}
+\usepackage{comments}
+
+% -------------- Project specific commands
+\newcommand{\HRule}[1]{\rule{\linewidth}{#1}}
+% --------------
+
+% \setstretch{1.2}
+\geometry{
+    textheight=9in,
+    textwidth=5.5in,
+    top=1in,
+    headheight=12pt,
+    headsep=25pt,
+    footskip=30pt
+}
+
+% ------------------------------------------------------------------------------
+
+\begin{document}
+
+% ------------------------------------------------------------------------------
+% Cover Page and ToC
+% ------------------------------------------------------------------------------
+
+\title{ \normalsize \textsc{}
+		\\ [2.0cm]
+		\HRule{1.5pt} \\
+		\LARGE \textbf{\uppercase{Air Water Air test case}
+		\HRule{2.0pt} \\ [0.6cm] 
+      % \LARGE{Subtitle}
+      \vspace*{10\baselineskip}}
+		}
+\date{}
+\author{\textbf{Author} \\ 
+		Madison Sheridan}
+
+\maketitle
+\newpage
+
+\tableofcontents
+\newpage
+
+% ------------------------------------------------------------------------------
+
+\section{Problem Description}
+We describe the air-water-air test that was introduced in \cite{shyue-2004}, and lated tested in \cite{cheng-shu-2014, Vilar_Shu_Maire_2D}.
+%
+In this test, we consider a radially symmetric two-phase configuration consisting of an inner air region, a middle water layer, and an outer air region. The computational domain corresponds to a cylinder of radius $r \in [0,1.2]$, where the material distribution is defined as follows:
+\begin{equation}
+(\rho, \bv, p) =
+\begin{cases}
+(0.001, \bzero, 1000), & 0 < r < 0.2, \\[4pt]
+(1, \bzero, 1), & 0.2 < r < 1.0, \\[4pt]
+(0.001, \bzero, 0.001), & 1.0 < r < 1.2.
+\end{cases}
+\label{eq:air-water-air-ic}
+\end{equation}
+The first and last regions correspond to air and are modeled by the ideal gas EOS with $\gamma = 1.4$.
+The middle region contained water and is modeled by the Stiffened Gas EOS with $\gamma = 7$ and $p_s = 3000$.
+The problem thus models the interaction between compressible air and nearly incompressible water layers under Lagrangian motion.
+
+Because of the radial symmetry of the configuration, we restrict computations to a quarter of the domain and apply symmetry boundary conditions along the bottom, left, and right boundaries.
+
+This test is designed to assess the robustness and positivity-preserving properties of the Lagrangian scheme in the presence of large material density contrasts. In particular, it is known that without a positivity-preserving limiter, the internal energy may become negative in the air regions, leading to numerical instability. Therefore, this case provides a stringent test for evaluating the ability of the limiter to maintain the physical admissibility of density and internal energy throughout the evolution.
+
+% ------------------------------------------------------------------------------
+
+\newpage
+
+% ------------------------------------------------------------------------------
+% Reference and Cited Works
+% ------------------------------------------------------------------------------
+%fix spacing in bibliography, if any...
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\let\oldbibitem\bibitem
+\renewcommand{\bibitem}{\setlength{\itemsep}{0pt}\oldbibitem}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%The bibliography style declared is the IEEE format. If
+%you require a different style, see the document
+%bibstyles.pdf included in this package. This file,
+%hosted by the University of Vienna, shows several
+%bibliography styles and examples of in-text citation
+%and a references page.
+% \bibliographystyle{ieeetr}
+\bibliographystyle{plainnat}
+
+% \phantomsection
+% \addcontentsline{toc}{chapter}{REFERENCES}
+
+% \renewcommand{\bibname}{{\normalsize\rm REFERENCES}}
+
+%This file is a .bib database that contains the sources.
+%This removes the dependency on the previous file
+%bibliography.tex.
+%EDIT the path to the .bib file as needed
+\bibliography{../../bibliography}
+
+% ------------------------------------------------------------------------------
+
+\end{document}
