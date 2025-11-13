@@ -1,6 +1,8 @@
 I am writing to express my interest in 
-the \jobtitle\ at 
-\company, where I can apply my expertise in computational modeling, quantitative analysis, and algorithmic problem-solving to support data-driven investment and risk management decisions.
+\ifdefempty{\jobtitle}
+  {\company,} % <-- Text used if \jobtitle is empty
+  {the \jobtitle\ at \company,} % <-- Use \jobtitle if it’s defined
+where I can apply my expertise in computational modeling, quantitative analysis, and algorithmic problem-solving to support data-driven investment and risk management decisions.
 
 My Ph.D. research focused on designing and validating high-fidelity numerical methods for complex, nonlinear systems—experience that translates directly to financial modeling, forecasting, and simulation of dynamic markets. I developed and implemented algorithms for large-scale numerical optimization, uncertainty quantification, and data analysis.  I am interested in the financial markets and motivated by the challenge of developing and improving quantitative tools that leverage mathematical intuition to better capture and interpret underlying market trends.
 

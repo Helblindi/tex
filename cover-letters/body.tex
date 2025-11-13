@@ -1,4 +1,8 @@
-I am writing to express my interest in the \jobtitle\ at \company, where I can apply my expertise in computational modeling, numerical analysis, and algorithm development to support innovative engineering solutions.
+I am writing to express my interest in 
+\ifdefempty{\jobtitle}
+  {\company,} % <-- Text used if \jobtitle is empty
+  {the \jobtitle\ at \company,} % <-- Use \jobtitle if it’s defined
+where I can apply my expertise in computational modeling, numerical analysis, and algorithm development to support innovative engineering solutions.
 
 My Ph.D. research focused on designing and validating high-fidelity numerical methods for simulating nonlinear physical systems. I developed and implemented simulation tools for fluid dynamics, radiation transport, and multiphysics interactions—work that required careful error, stability, and convergence analysis. These skills directly support model verification, performance prediction, and system-level analysis in complex engineering applications.
 
