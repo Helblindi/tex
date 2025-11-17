@@ -4,10 +4,18 @@
 \usepackage[nobottomtitles]{titlesec}
 \newcommand{\tab}[1]{\hspace{.2667\textwidth}\rlap{#1}} 
 \newcommand{\itab}[1]{\hspace{0em}\rlap{#1}}
+% Here I want to define bwhref, which will revert to black on the URLs.
+\newcommand{\bwhref}[2]{
+  {\hypersetup{
+    colorlinks=true,
+    urlcolor=black,}
+  \href{#1}{#2}%
+  }%
+}
 \name{Madison Sheridan} % Your name
 % You can merge both of these into a single line, if you do not have a website.
-\address{+1(916) 790-7806 \\ College Station, TX} 
-\address{\href{mailto:madison.sheridan94@gmail.com}{madison.sheridan94@gmail.com} \\ \href{https://www.linkedin.com/in/madison-sheridan/}{linkedin.com/in/madison-sheridan/} \\ \href{https://helblindi.github.io}{https://helblindi.github.io}}  %
+\address{+1(916)790-7806 \\ College Station, TX} 
+\address{\bwhref{mailto:madison.sheridan94@gmail.com}{madison.sheridan94@gmail.com} \\ \bwhref{https://www.linkedin.com/in/madison-sheridan/}{linkedin.com/in/madison-sheridan/} \\ \bwhref{https://helblindi.github.io}{https://helblindi.github.io}}  %
 
 \input{summary}
 
@@ -21,7 +29,20 @@
 
 {\summary}
 
+\end{rSection}
 
+%----------------------------------------------------------------------------------------
+%	EDUCATION SECTION
+%----------------------------------------------------------------------------------------
+
+\begin{rSection}{EDUCATION}
+{\bf Ph.D., Mathematics}, Texas A\&M University, College Station, TX \hfill {Aug 2019 - Dec 2025} \\
+\textbf{Thesis:} A Robust Lagrangian Framework for Compressible Flow \& Hyperelasticity \\
+\textbf{Emphasis:} Finite Element Methods, Computation Fluid Dynamics, Partial Differential Equations \\
+
+{\bf Bachelor of Science, Mathematics (Computer Science minor)}, \hfill
+{Jan 2015 - Apr 2019} \\
+Brigham Young University - Idaho, Rexburg, ID 
 \end{rSection}
 
 %----------------------------------------------------------------------------------------
@@ -31,67 +52,42 @@
 \begin{rSection}{EXPERIENCE}
 
 \textbf{Graduate Teaching/Research Assistant} \hfill Aug 2019 - Dec 2025\\
-Texas A\&M University \hfill \textit{College Station, TX}\\
-{\bf Advisor: Jean-Luc Guermond}
+Texas A\&M University \hfill \textit{College Station, TX}%\\
+% {\bf Advisor: Jean-Luc Guermond}
  \begin{itemize}
     % \itemsep -3pt {} 
-    \item Developed a finite element method for the equations of Lagrangian hydrodynamics that achieves high-order accuracy while preserving essential physical invariants, ensuring robustness in challenging flow regimes.
-    \item Collaborated across mathematics, physics, and engineering teams; presented findings at SIAM CSE, USNCCM, and other national conferences.
-    \item Served as Instructor of Record for Math 140, independently leading classroom instruction, developing assignments and exams, and evaluating student performance.
+    \item Developed a Lagrangian finite element method, achieving high-order accuracy while preserving essential physical invariants and ensuring robustness in challenging flow regimes.
+    \item Conducted verification and validation studies by comparing simulation outputs against analytical solutions and standard hydrodynamics benchmarks, confirming correctness and numerical stability.
+    \item Instructor of Record for Math 140 (Math for Business and Social Sciences) for 15 students, delivering 7.5 hours of weekly instruction, designing assignments and exams, and evaluating student performance across assessments.
  \end{itemize}
 \vspace{1em}
 \textbf{Graduate Student Intern} \hfill May 2022 - Sep 2023\\
-Lawrence Livermore National Laboratory \hfill \textit{Livermore,  CA} \\
-{\bf Mentor: Vladimir Tomov}
+Lawrence Livermore National Laboratory \hfill \textit{Livermore,  CA} %\\
+% {\bf Mentor: Vladimir Tomov}
 \begin{itemize}
-    \item Augmented high-order Lagrangian hydrodynamics codes in C++/MFEM with an invariant-domain preserving Lagrangian finite element method, ensuring physics-consistent robustness validated with benchmark tests.
-    \item Extended an existing discontinuous Galerkin advection solver to support continuous finite element discretizations, enhancing code capabilities and enabling broader benchmarking.
+    \item Augmented high-order Lagrangian hydrodynamics codes in C++ with an invariant-domain preserving Lagrangian finite element method, ensuring physics-consistent robustness validated with benchmark tests.
+    \item Modified an existing discontinuous Galerkin advection solver to a continuous finite element discretization, enhancing code capabilities and enabling broader benchmarking.
 \end{itemize}
  \vspace{1em}
 \textbf{Graduate Student Intern} \hfill May 2019 - Apr 2022\\
-Nevada National Security Site \hfill \textit{North Las Vegas, NV} \\
-{\bf Mentors: Cleat Zeiler, Marylesa Howard, Daniel Champion}
+Nevada National Security Site \hfill \textit{North Las Vegas, NV} %\\
+% {\bf Mentors: Cleat Zeiler, Marylesa Howard, Daniel Champion}
  \begin{itemize}
     % \itemsep -3pt {} 
      \item Developed and trained deep learning models in Python/TensorFlow to reconstruct clipped seismic waveforms, improving signal fidelity and enabling more accurate seismic event detection.
-    \item Designed a Python-based multilateration algorithm using geophone array data to geolocate seismic signal sources with improved accuracy, supporting rapid deployment for field missions.
+    \item Designed a Python-based multilateration algorithm using geophone array data to geolocate seismic signal sources with improved accuracy, promoting rapid deployment for field missions.
  \end{itemize}
 
 \end{rSection} 
-%----------------------------------------------------------------------------------------
-%	EDUCATION SECTION
-%----------------------------------------------------------------------------------------
-
-\begin{rSection}{EDUCATION}
-
-% {\bf Master of Computer Science}, Stanford University \hfill {Expected 2020}\\
-% Relevant Coursework: A, B, C, and D.
-
-% {\bf Bachelor of Computer Science}, Stanford University \hfill {2014 - 2017}
-% Minor in Linguistics \smallskip \\
-% Member of Eta Kappa Nu \\
-% Member of Upsilon Pi Epsilon \\
-
-{\bf PhD, Mathematics}, Texas A\&M University, College Station, TX \hfill {Aug 2019 - Dec 2025} \\
-\textbf{Thesis:} A Robust Lagrangian Framework for Compressible Flow \& Hyperelasticity \\
-\textbf{Emphasis:} Finite Element Methods, Computation Fluid Dynamics, Partial Differential Equations \\
-
-{\bf Bachelor of Science, Mathematics (Computer Science minor)}, \hfill
-{Jan 2015 - Apr 2019} \\
-Brigham Young University - Idaho, Rexburg, ID 
-
-\end{rSection}
 
 %----------------------------------------------------------------------------------------
-%	WORK EXPERIENCE SECTION\cvitem{2024}{\textbf{Mentor}, Advised an undergraduate research project on nonlinear elasticity for the Modeling and Simulation with PDEs summer school, Texas A\&M University}
-
 \begin{rSection}{SKILLS}
     \skills
 \end{rSection}
 %----------------------------------------------------------------------------------------
 
 \begin{rSection}{PUBLICATIONS}
-\item Guermond, J.-L., Popov, B., Saavedra, L., Sheridan, M., \textit{"Invariant-domain-preserving and locally mass conservative approximation of the Lagrangian hydrodynamics equations,"} \textbf{Computer Methods in Applied Mechanics and Engineering}, 2025
+Guermond, J.-L., Popov, B., Saavedra, L., Sheridan, M., \textit{"Invariant-domain-preserving and locally mass conservative approximation of the Lagrangian hydrodynamics equations,"} \textbf{Computer Methods in Applied Mechanics and Engineering}, 2025
 \end{rSection}
 % \begin{rSection}{PROJECTS}
 % \vspace{-1.25em}
@@ -100,22 +96,40 @@ Brigham Young University - Idaho, Rexburg, ID
 % \item \textbf{Short Project Title.} {Build a project that does something and had quantified success using A, B, and C. This project's description spans two lines and also won an award.}
 % \end{rSection} 
 
+\begin{rSection}{Presentations}
+\textbf{Invariant-Domain-Preserving and Exactly Conservative Approximation of the Lagrangian Hydrodynamics Equations}
+\begin{itemize}
+   \item LANL Center for Nonlinear Studies Seminar Series, Los Alamos, NM. Sep 2025.
+   \item 7th Annual Meeting of the SIAM Texas-Louisiana Section, Baylor University, Waco, TX. Oct 2024.
+   \item Second annual RTG NASC Annual Workshop, Rice University, Houston, TX. Oct 2024.
+   \item 6th Annual Meeting of the SIAM Texas-Louisiana Section, University of Louisiana at Lafayette, Lafayette, LA. Nov 2023.
+   \item Intern Final Presentations, Livermore, CA. Aug 2023.
+   \item 17th U. S. National Congress on Computational Mechanics, Albuquerque, NM. Jul 2023.
+   \item Finite Element Rodeo, Texas A\&M University, College Station, TX. Mar 2023.
+   \item SIAM Conference on Computational Science and Engineering (CSE23), Amsterdam, The Netherlands. Feb 2023.
+\end{itemize}
+\textbf{A Brief Introduction to Finite Element Methods}
+\begin{itemize}
+   \item Applied Mathematics Undergraduate Seminar (AMUSE), Texas A\&M University, College Station, TX. Oct 2023.
+\end{itemize}
+\end{rSection}
+
 %----------------------------------------------------------------------------------------
-\begin{rSection}{Outreach \& Service} 
+\begin{rSection}{Volunteer Experience} 
 
 \textbf{Undergraduate Research Advisor} \\ 
 Texas A\&M University \hfill \textit{College Station, TX}
 \begin{itemize}
-    \item Guided an undergraduate research project on nonlinear elasticity for the Modeling and Simulation with PDEs summer school, supporting problem formulation, implementation, and presentation of results. (2024)
-    \item Supervised an undergraduate research project on chemotaxis for the Directed Reading Program, providing one-on-one instruction, feedback, and research direction, culminating in an end of the semester presentation. (2022)
+    \item Guided an undergraduate research project on nonlinear elasticity for the Modeling and Simulation with PDEs summer school, directing problem formulation, implementation, and presentation of results (2024).
+    \item Supervised an undergraduate research project on chemotaxis for the Directed Reading Program, providing one-on-one instruction, feedback, and research direction, culminating in an end of the semester presentation (2022).
 \end{itemize}
 
-\textbf{Volunteer}
+\textbf{Miscellaneous Volunteer}
 \begin{itemize}
-    \item Mathematics and Statistics Fair, Texas A\&M University \hfill Jan 2023
-    \item \textbf{GED Prep Instructor}, B/CS Community Education Center, Bryan, TX %2021-2022
-    \hfill 2021-2022
-    \item \textbf{Proctor}, High School Math Contest, Texas A\&M University %2019
+    \item Mathematics and Statistics Fair, Texas A\&M University. \hfill Jan 2023
+    \item \textbf{GED Prep Instructor}, B/CS Community Education Center, Bryan, TX. %2021-2022
+    \hfill Jan 2021 - Jan 2022
+    \item \textbf{Proctor}, High School Math Contest, Texas A\&M University. %2019
     \hfill Oct 2019
     % \item \textbf{Missionary}, Church of Jesus Christ of Latter Day Saints, Porto Alegre, Rio Grande do Sul, Brazil \& Twin Falls, ID, USA. % 2013-2015    
 \end{itemize}
@@ -124,21 +138,26 @@ Texas A\&M University \hfill \textit{College Station, TX}
 
 \end{rSection}
 
+%----------------------------------------------------------------------------------------
+
 \begin{rSection}{Leadership}
-
-\textbf{Organizer} \hfill Jul 2023 \\
-Mini-symposium on ``Invariant-Domain Preserving Hydrodynamics: From Euler to Navier-Stokes" \\
-17th U.S. National Congress on Computational Mechanics, Albuquerque, NM, USA
-
-\textbf{Organizer} \hfill Nov 2022 \\
-Mini-symposium on ``High Order Methods for Computational Hydrodynamics" \\
-5th Annual Meeting of the SIAM Texas-Louisiana Section, Houston, TX, USA
-
-\textbf{President, Vice President, Treasurer} \hfill 2019 -- 2024 \\
-Society for Industrial and Applied Mathematics (SIAM) Graduate Student Chapter, Texas A\&M University
-
-    
+\textbf{Mini-symposium Organizer} \hfill 2022 - 2023
+\begin{itemize}
+   \item Organized and chaired technical sessions at major computational mechanics conferences.
+   % \begin{itemize}
+   %    \item ``High Order Methods for Computational Hydrodynamics,'' \textit{SIAM TX-LA Section Annual Meeting}, Houston, TX
+   %    \item ``Invariant-Domain Preserving Hydrodynamics: From Euler to Navier–Stokes,'' \textit{17th U.S. National Congress on Computational Mechanics}, Albuquerque, NM
+   % \end{itemize}
+\end{itemize}
+\vspace{0.75em}
+\textbf{President, Vice President, and Treasurer} \hfill 2019 - 2024 \\
+SIAM Graduate Student Chapter, Texas A\&M University
+\begin{itemize}
+   \item Led chapter operations, organized seminars and student engagement events, and managed budgeting and funding activities.
+\end{itemize}
 \end{rSection}
+%----------------------------------------------------------------------------------------
+%----------------------------------------------------------------------------------------
 
 \begin{rSection}{Languages}
 \textbf{English}\hfill Native Language \\
